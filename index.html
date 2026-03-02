@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선우테크 - 스마트 손해평가</title>
+    <style>
+        :root { --primary-color: #27ae60; --dark-color: #2c3e50; --bg-color: #f8f9fa; }
+        body { font-family: 'Pretendard', -apple-system, sans-serif; margin: 0; padding: 0; color: #333; background-color: white; line-height: 1.6; }
+        
+        /* 헤더 (네비게이션) */
+        header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 900; color: var(--dark-color); letter-spacing: -1px; }
+        .logo span { color: var(--primary-color); }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: #555; font-weight: bold; font-size: 14px; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary-color); }
+
+        /* 메인 배너 (히어로 섹션) */
+        .hero { background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%); color: white; padding: 100px 20px; text-align: center; }
+        .hero h1 { font-size: 42px; margin-bottom: 20px; letter-spacing: -2px; }
+        .hero p { font-size: 18px; color: #ecf0f1; max-width: 600px; margin: 0 auto 30px auto; word-break: keep-all; }
+        .badge { background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+
+        /* 주요 기능 섹션 */
+        .features { padding: 80px 20px; background: var(--bg-color); text-align: center; }
+        .features h2 { font-size: 28px; color: var(--dark-color); margin-bottom: 50px; }
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); flex: 1; min-width: 250px; text-align: left; }
+        .card h3 { color: var(--primary-color); margin-top: 0; font-size: 20px; }
+        .card p { color: #666; font-size: 14px; margin-bottom: 0; }
+
+        /* 개인정보처리방침 섹션 */
+        .privacy-section { padding: 80px 20px; max-width: 800px; margin: 0 auto; }
+        .privacy-section h2 { font-size: 24px; color: var(--dark-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px; }
+        .privacy-box { background: #f1f2f6; padding: 30px; border-radius: 10px; font-size: 13px; color: #555; height: 300px; overflow-y: auto; border: 1px solid #ddd; }
+        
+        /* 푸터 */
+        footer { background: var(--dark-color); color: #bdc3c7; padding: 40px 20px; text-align: center; font-size: 14px; }
+        footer p { margin: 5px 0; }
+        footer strong { color: white; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">선우<span>테크</span></div>
+    <div class="nav-links">
+        <a href="#about">앱 소개</a>
+        <a href="#features">주요 기능</a>
+        <a href="#privacy">개인정보처리방침</a>
+    </div>
+</header>
+
+<section class="hero" id="about">
+    <div class="badge">현장 전문가를 위한 최적의 솔루션</div>
+    <h1>스마트 손해평가</h1>
+    <p>도면과 수첩은 이제 그만! 오차 없는 정밀 지적도, 다중 카운터, 오프라인 측정까지.<br>스마트폰 하나로 현장 조사의 모든 것을 완벽하게 끝내세요.</p>
+</section>
+
+<section class="features" id="features">
+    <h2>핵심 기능 안내</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🎯 0% 오차, 정밀 측정</h3>
+            <p>카카오 지적도 및 위성도를 완벽 지원하여 실제 경계에 딱 맞는 정확한 면적을 산출합니다. 도보 및 차량 추적 기능도 지원합니다.</p>
+        </div>
+        <div class="card">
+            <h3>🔢 다중 카운터 & 표본판</h3>
+            <p>항목별 개수를 동시에 세고 관리할 수 있으며, 현장 사진 촬영을 위한 대형 표본번호판과 원터치 캡처 기능을 제공합니다.</p>
+        </div>
+        <div class="card">
+            <h3>📡 오프라인 백지도 모드</h3>
+            <p>인터넷 통신이 끊기는 깊은 산속이나 농지에서도 GPS 센서만으로 정확하게 면적을 측정하고 궤적을 그릴 수 있습니다.</p>
+        </div>
+    </div>
+</section>
+
+<section class="privacy-section" id="privacy">
+    <h2>개인정보처리방침</h2>
+    <div class="privacy-box">
+        <strong>스마트 손해평가 (Pro / Lite) 개인정보처리방침</strong><br><br>
+        선우테크(이하 '회사')는 사용자의 개인정보 보호를 매우 중요하게 생각하며, 관련 법령을 준수하고 있습니다.<br><br>
+        <strong>1. 수집하는 개인정보 항목 및 수집 방법</strong><br>
+        본 앱은 사용자를 식별할 수 있는 어떠한 개인정보(이름, 전화번호, 이메일 등)도 서버로 수집하거나 외부로 전송하지 않습니다. 단, 앱의 핵심 기능(면적 측정 및 내 위치 확인)을 제공하기 위해 기기 자체에서 '위치 정보(GPS)' 권한을 요구하고 실시간으로 활용합니다.<br><br>
+        <strong>2. 개인정보의 이용 목적 및 보관</strong><br>
+        위치 정보 및 측정 데이터, 캡처된 사진 등 앱 내에서 생성된 모든 데이터는 오직 사용자의 스마트폰(기기 내부)에만 국한되어 처리 및 저장됩니다. 회사는 이 데이터를 외부 서버로 전송하거나 백업하지 않습니다.<br><br>
+        <strong>3. 개인정보의 파기</strong><br>
+        사용자가 기기 설정에서 '앱 데이터 지우기'를 실행하거나 앱을 삭제할 경우, 앱 내부에 저장된 모든 측정 기록은 즉시 영구적으로 파기됩니다.<br><br>
+        <strong>4. 연락처</strong><br>
+        개인정보 보호 및 앱 오류 등에 대한 문의가 있으신 경우 아래로 연락해 주시기 바랍니다.<br>
+        - 이메일: cobolstar@gmail.com
+    </div>
+</section>
+
+<footer>
+    <p><strong>선우테크 (Sunwoo Tech)</strong></p>
+    <p>이메일: cobolstar@gmail.com</p>
+    <p style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">&copy; 2026 Sunwoo Tech. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
