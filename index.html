@@ -1,103 +1,281 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>선우테크 - 스마트 손해평가</title>
-    <style>
-        :root { --primary-color: #27ae60; --dark-color: #2c3e50; --bg-color: #f8f9fa; }
-        body { font-family: 'Pretendard', -apple-system, sans-serif; margin: 0; padding: 0; color: #333; background-color: white; line-height: 1.6; }
-        
-        /* 헤더 (네비게이션) */
-        header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 24px; font-weight: 900; color: var(--dark-color); letter-spacing: -1px; }
-        .logo span { color: var(--primary-color); }
-        .nav-links a { margin-left: 20px; text-decoration: none; color: #555; font-weight: bold; font-size: 14px; transition: color 0.2s; }
-        .nav-links a:hover { color: var(--primary-color); }
-
-        /* 메인 배너 (히어로 섹션) */
-        .hero { background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%); color: white; padding: 100px 20px; text-align: center; }
-        .hero h1 { font-size: 42px; margin-bottom: 20px; letter-spacing: -2px; }
-        .hero p { font-size: 18px; color: #ecf0f1; max-width: 600px; margin: 0 auto 30px auto; word-break: keep-all; }
-        .badge { background: var(--primary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
-
-        /* 주요 기능 섹션 */
-        .features { padding: 80px 20px; background: var(--bg-color); text-align: center; }
-        .features h2 { font-size: 28px; color: var(--dark-color); margin-bottom: 50px; }
-        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 1000px; margin: 0 auto; }
-        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); flex: 1; min-width: 250px; text-align: left; }
-        .card h3 { color: var(--primary-color); margin-top: 0; font-size: 20px; }
-        .card p { color: #666; font-size: 14px; margin-bottom: 0; }
-
-        /* 개인정보처리방침 섹션 */
-        .privacy-section { padding: 80px 20px; max-width: 800px; margin: 0 auto; }
-        .privacy-section h2 { font-size: 24px; color: var(--dark-color); border-bottom: 2px solid var(--primary-color); padding-bottom: 10px; margin-bottom: 30px; }
-        .privacy-box { background: #f1f2f6; padding: 30px; border-radius: 10px; font-size: 13px; color: #555; height: 300px; overflow-y: auto; border: 1px solid #ddd; }
-        
-        /* 푸터 */
-        footer { background: var(--dark-color); color: #bdc3c7; padding: 40px 20px; text-align: center; font-size: 14px; }
-        footer p { margin: 5px 0; }
-        footer strong { color: white; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>선우테크 · 스마트 손해평가 · 스마트 면적측정</title>
+<meta name="description" content="선우테크(SUNWOOTECH)의 농업 현장용 앱 — 스마트 손해평가, 스마트 면적측정. 앱 소개와 개인정보처리방침.">
+<style>
+  :root{
+    --bg:#f6f8fa; --card:#ffffff; --fg:#1d2a35; --muted:#5d6d7b; --line:#e3e8ee;
+    --green:#16a34a; --green-soft:#e8f7ee; --cyan:#0891b2; --cyan-soft:#e3f6fa; --dark:#0f1b24;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;word-break:keep-all}
+  a{color:var(--cyan)}
+  header.top{position:sticky;top:0;z-index:10;background:rgba(15,27,36,.96);color:#fff}
+  .wrap{max-width:960px;margin:0 auto;padding:0 16px}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;flex-wrap:wrap}
+  .brand{font-weight:800;font-size:17px;letter-spacing:-.2px}
+  .brand small{font-weight:500;opacity:.7;margin-left:6px;font-size:12px}
+  nav a{color:#cfe3ea;text-decoration:none;font-size:14px;margin-left:14px;white-space:nowrap}
+  nav a:hover{color:#fff}
+  .hero{background:linear-gradient(135deg,#0f1b24,#10323d);color:#fff;padding:52px 0 44px}
+  .hero h1{margin:0 0 8px;font-size:30px;letter-spacing:-.5px}
+  .hero p{margin:0;color:#b8d2da;max-width:640px}
+  section{padding:40px 0 8px}
+  h2{font-size:22px;margin:0 0 16px;letter-spacing:-.3px}
+  h3{font-size:17px;margin:22px 0 6px}
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .app{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+  .app .tag{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px;margin-bottom:8px}
+  .app.full .tag{background:var(--green-soft);color:var(--green)}
+  .app.area .tag{background:var(--cyan-soft);color:var(--cyan)}
+  .app h3{margin:0 0 4px;font-size:20px}
+  .app .pkg{color:var(--muted);font-size:12px;margin:0 0 10px}
+  .app ul{margin:8px 0 12px;padding-left:18px}
+  .app li{margin:3px 0}
+  .links a{display:inline-block;margin:4px 12px 0 0;font-weight:600;font-size:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin-bottom:16px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+  th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+  th{background:#f3f6f8;width:28%}
+  .muted{color:var(--muted);font-size:13px}
+  .pp h3{color:var(--fg)}
+  .pp.full{border-top:4px solid var(--green)}
+  .pp.area{border-top:4px solid var(--cyan)}
+  details{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:#fff;margin:8px 0}
+  summary{cursor:pointer;font-weight:700}
+  footer{background:#0f1b24;color:#9fb6bf;font-size:13px;padding:28px 0 40px;margin-top:40px}
+  footer b{color:#e6f1f4}
+  @media (max-width:520px){ .hero h1{font-size:24px} nav a{margin-left:10px;font-size:13px} th{width:36%} }
+</style>
 </head>
 <body>
 
-<header>
-    <div class="logo">선우<span>테크</span></div>
-    <div class="nav-links">
-        <a href="#about">앱 소개</a>
-        <a href="#features">주요 기능</a>
-        <a href="#privacy">개인정보처리방침</a>
-    </div>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">선우테크<small>SUNWOOTECH</small></div>
+    <nav>
+      <a href="#about">앱 소개</a>
+      <a href="#features">주요 기능</a>
+      <a href="#privacy">개인정보처리방침</a>
+      <a href="#support">문의·지원</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero" id="about">
-    <div class="badge">현장 전문가를 위한 최적의 솔루션</div>
-    <h1>스마트 손해평가</h1>
-    <p>도면과 수첩은 이제 그만! 오차 없는 정밀 지적도, 다중 카운터, 오프라인 측정까지.<br>스마트폰 하나로 현장 조사의 모든 것을 완벽하게 끝내세요.</p>
+<div class="hero">
+  <div class="wrap">
+    <h1>현장 전문가를 위한 농업 현장 앱</h1>
+    <p>종이 없이 현장에서 바로 — 정밀 지적도 위 면적 측정, 작물별 손해평가 계산, 오프라인 GPS 측정까지.<br>선우테크는 <b>스마트 손해평가</b>와 <b>스마트 면적측정</b> 두 앱을 운영합니다.</p>
+  </div>
+</div>
+
+<main class="wrap">
+
+<!-- ================= 앱 소개 ================= -->
+<section id="about">
+  <h2>앱 소개</h2>
+  <div class="apps">
+    <div class="app full">
+      <span class="tag">손해평가사 · 조사자용</span>
+      <h3>스마트 손해평가</h3>
+      <p class="pkg">Smart Adjust · com.sunwootech.smartadjust</p>
+      농작물재해보험 손해평가 현장을 위한 올인원 앱입니다. 면적 측정에 작물별 손해평가 계산기, 조사서, 현장도구를 더했습니다.
+      <div class="links">
+        <a href="https://play.google.com/store/apps/details?id=com.sunwootech.smartadjust">Google Play</a>
+        <a href="#privacy">개인정보처리방침</a>
+      </div>
+    </div>
+    <div class="app area">
+      <span class="tag">누구나 · 국내·해외</span>
+      <h3>스마트 면적측정</h3>
+      <p class="pkg">Smart Area Measure · com.sunwootech.smartarea</p>
+      걷거나 지도를 터치해 땅의 면적과 둘레를 ㎡·평(ha·에이커)으로 바로 재는 앱입니다. 스마트 손해평가의 면적측정 기능을 가볍게 떼어 냈습니다.
+      <div class="links">
+        <a href="https://play.google.com/store/apps/details?id=com.sunwootech.smartarea">Google Play</a>
+        <a href="#privacy-area">개인정보처리방침</a>
+        <a href="privacy_area.html">Privacy Policy (English)</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="features" id="features">
-    <h2>핵심 기능 안내</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>🎯 0% 오차, 정밀 측정</h3>
-            <p>카카오 지적도 및 위성도를 완벽 지원하여 실제 경계에 딱 맞는 정확한 면적을 산출합니다. 도보 및 차량 추적 기능도 지원합니다.</p>
-        </div>
-        <div class="card">
-            <h3>🔢 다중 카운터 & 표본판</h3>
-            <p>항목별 개수를 동시에 세고 관리할 수 있으며, 현장 사진 촬영을 위한 대형 표본번호판과 원터치 캡처 기능을 제공합니다.</p>
-        </div>
-        <div class="card">
-            <h3>📡 오프라인 백지도 모드</h3>
-            <p>인터넷 통신이 끊기는 깊은 산속이나 농지에서도 GPS 센서만으로 정확하게 면적을 측정하고 궤적을 그릴 수 있습니다.</p>
-        </div>
+<!-- ================= 주요 기능 ================= -->
+<section id="features">
+  <h2>주요 기능</h2>
+  <div class="apps">
+    <div class="app full">
+      <h3>스마트 손해평가</h3>
+      <ul>
+        <li><b>정밀 면적 측정</b> — 네이버·카카오·구글 위성지도와 지적도, 과거 항공사진</li>
+        <li><b>지번 자동 그리기 · 지번별 편입 면적 분석 · 공부상 면적 비교</b></li>
+        <li><b>작물별 손해평가 계산기</b> — 업무방법서 산식, 전산과 원 단위까지 맞춘 피해율·보험금</li>
+        <li><b>조사서 · 리포트</b> 이미지 저장과 공유</li>
+        <li><b>현장도구</b> — 다중 카운터, 표본 번호판, 현장 메모, 스탬프 카메라(촬영 시각·좌표·주소 표기)</li>
+        <li><b>📡 오프라인 백지도 모드</b> — 인터넷 없이 GPS만으로 측정</li>
+      </ul>
     </div>
+    <div class="app area">
+      <h3>스마트 면적측정</h3>
+      <ul>
+        <li><b>터치 측정 · 도보 GPS 측정</b>, 경로 보정, 면적 제외·추가, 길이 측정</li>
+        <li><b>다양한 지도</b> — 구글 위성지도(전 세계), 네이버·카카오·지적도·과거 항공사진(국내)</li>
+        <li><b>단위 선택</b> — ㎡·평 / ㎡·ha / 에이커·피트, 경사도 보정</li>
+        <li><b>캡처 저장·공유, 측정 이력</b></li>
+        <li><b>한국어 / English</b></li>
+        <li>무료(광고 포함) · <b>Pro 월간·연간 구독</b> 시 광고 제거와 Pro 기능</li>
+      </ul>
+    </div>
+  </div>
 </section>
 
-<section class="privacy-section" id="privacy">
-    <h2>개인정보처리방침</h2>
-    <div class="privacy-box">
-        <strong>스마트 손해평가 (Pro / Lite) 개인정보처리방침</strong><br><br>
-        선우테크(이하 '회사')는 사용자의 개인정보 보호를 매우 중요하게 생각하며, 관련 법령을 준수하고 있습니다.<br><br>
-        <strong>1. 수집하는 개인정보 항목 및 수집 방법</strong><br>
-        본 앱은 사용자를 식별할 수 있는 어떠한 개인정보(이름, 전화번호, 이메일 등)도 서버로 수집하거나 외부로 전송하지 않습니다. 단, 앱의 핵심 기능(면적 측정 및 내 위치 확인)을 제공하기 위해 기기 자체에서 '위치 정보(GPS)' 권한을 요구하고 실시간으로 활용합니다.<br><br>
-        <strong>2. 개인정보의 이용 목적 및 보관</strong><br>
-        위치 정보 및 측정 데이터, 캡처된 사진 등 앱 내에서 생성된 모든 데이터는 오직 사용자의 스마트폰(기기 내부)에만 국한되어 처리 및 저장됩니다. 회사는 이 데이터를 외부 서버로 전송하거나 백업하지 않습니다.<br><br>
-        <strong>3. 개인정보의 파기</strong><br>
-        사용자가 기기 설정에서 '앱 데이터 지우기'를 실행하거나 앱을 삭제할 경우, 앱 내부에 저장된 모든 측정 기록은 즉시 영구적으로 파기됩니다.<br><br>
-        <strong>4. 연락처</strong><br>
-        개인정보 보호 및 앱 오류 등에 대한 문의가 있으신 경우 아래로 연락해 주시기 바랍니다.<br>
-        - 이메일: cobolstar@gmail.com
-    </div>
+<!-- ================= 개인정보처리방침: 스마트 손해평가 ================= -->
+<section id="privacy">
+  <h2>개인정보처리방침</h2>
+  <p class="muted">앱마다 사용하는 정보가 달라 방침을 나누어 게시합니다. · <a href="#privacy">스마트 손해평가</a> · <a href="#privacy-area">스마트 면적측정</a> · <a href="privacy_area.html">Smart Area Measure (English)</a></p>
+
+  <div class="card pp full">
+    <h2 style="margin-bottom:4px">스마트 손해평가 개인정보처리방침</h2>
+    <p class="muted">시행일: 2026년 __월 __일 · com.sunwootech.smartadjust</p>
+    <p>선우테크(SUNWOOTECH, 이하 “개발자”)는 「스마트 손해평가」(이하 “앱”) 이용자의 개인정보를 소중히 다루며 「개인정보 보호법」 등 관련 법령을 지킵니다.</p>
+
+    <h3>1. 개발자가 수집·보관하는 개인정보</h3>
+    <p>앱은 회원가입이 없으며, <b>개발자가 운영하는 서버에 이용자의 개인정보를 저장하지 않습니다.</b> 측정 기록, 계산 이력, 조사 입력값(농가명·증권번호 등 이용자가 직접 입력한 값), 사진, 설정은 모두 이용자의 기기 안에만 저장됩니다. 앱에는 광고가 없습니다.</p>
+
+    <h3>2. 앱이 사용하는 정보와 목적</h3>
+    <table>
+      <tr><th>정보</th><th>사용 목적 · 처리 위치</th></tr>
+      <tr><td>정밀 위치(GPS)</td><td>현재 위치 표시, 면적 측정, 도보·차량 이동 경로 기록, 사진 스탬프·EXIF 좌표. 기기 안에서 계산합니다. 도보 측정 중에는 화면이 꺼져도 경로가 끊기지 않도록 <b>알림을 표시한 채(포그라운드 서비스)</b> 위치를 사용하며, 측정을 끝내면 즉시 중단합니다.</td></tr>
+      <tr><td>지도 위 좌표·검색어</td><td>지도·위성사진 표시, 주소·지번 검색, 지적도 경계·공부상 면적 조회, 고도 표시 — 아래 3항의 제공자에게 조회 요청으로 전송</td></tr>
+      <tr><td>카메라 · 사진</td><td>현장 스탬프 카메라 촬영. 사진은 기기 갤러리(Pictures/SmartAdjust)에 저장되며 외부로 전송하지 않습니다.</td></tr>
+      <tr><td>QR·데이터매트릭스 스캔</td><td>조사서 QR 인식(Google Play 서비스 코드 스캐너, 기기 안에서 처리)</td></tr>
+      <tr><td>구매 정보</td><td>Pro 구독 여부 확인(Google Play 결제). 카드 등 결제수단 정보는 개발자에게 전달되지 않습니다.</td></tr>
+      <tr><td>백업 파일 · 공유</td><td>이용자가 직접 [백업 내보내기]·[공유]를 누를 때만, 이용자가 고른 앱(카카오톡·드라이브·메일 등)으로 전달</td></tr>
+      <tr><td>오류 제보 · 문의</td><td>이용자가 직접 보낼 때만 앱 버전과 기기 모델명이 함께 전달됩니다(Google 설문지·메일).</td></tr>
+    </table>
+
+    <h3>3. 외부 지도·데이터 서비스</h3>
+    <p>Google Maps Platform(Google LLC), NAVER Cloud Platform 지도(네이버클라우드), 카카오맵 API(㈜카카오), 브이월드(국토교통부), 국토정보플랫폼(국토지리정보원), Open-Meteo(고도). 각 서비스의 개인정보 처리는 해당 제공자의 방침을 따릅니다.</p>
+
+    <h3>4. 앱 권한</h3>
+    <ul>
+      <li>위치(정밀·대략), 포그라운드 서비스(위치): 면적 측정·도보 경로 기록</li>
+      <li>알림: 도보 측정 중 진행 표시</li>
+      <li>카메라: 스탬프 카메라(선택)</li>
+      <li>인터넷, 진동</li>
+    </ul>
+    <p class="muted">권한을 거부해도 해당 기능 외의 기능은 사용할 수 있습니다.</p>
+
+    <h3>5. 보관 기간 · 파기 · 삭제 방법</h3>
+    <p>기기에 저장된 정보는 이용자가 앱에서 삭제하거나 앱을 삭제하면 함께 삭제됩니다. 갤러리 사진은 갤러리에서 직접 삭제할 수 있습니다. 개발자 서버에는 보관하는 개인정보가 없어 별도의 삭제 요청 절차가 필요 없으며, 문의는 아래 연락처로 받습니다.</p>
+
+    <h3>6. 아동</h3>
+    <p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+
+    <h3>7. 개인정보 보호책임자 · 문의</h3>
+    <table>
+      <tr><th>개인정보 보호책임자</th><td>이현철 (대표)</td></tr>
+      <tr><th>이메일</th><td>cobolstar@gmail.com</td></tr>
+    </table>
+
+    <h3>8. 변경</h3>
+    <p>이 방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다.</p>
+  </div>
 </section>
+
+<!-- ================= 개인정보처리방침: 스마트 면적측정 ================= -->
+<section id="privacy-area">
+  <div class="card pp area">
+    <h2 style="margin-bottom:4px">스마트 면적측정 개인정보처리방침</h2>
+    <p class="muted">시행일: 2026년 __월 __일 · com.sunwootech.smartarea · <a href="privacy_area.html">English version</a></p>
+    <p>선우테크(SUNWOOTECH, 이하 “개발자”)는 「스마트 면적측정」(이하 “앱”) 이용자의 개인정보를 소중히 다루며 관련 법령을 지킵니다.</p>
+
+    <h3>1. 개발자가 수집·보관하는 개인정보</h3>
+    <p>앱은 회원가입이 없으며, <b>개발자가 운영하는 서버에 이용자의 개인정보를 저장하지 않습니다.</b> 측정 기록, 캡처 이미지, 설정은 이용자의 기기 안에만 저장됩니다.</p>
+
+    <h3>2. 앱이 사용하는 정보와 목적</h3>
+    <table>
+      <tr><th>정보</th><th>사용 목적 · 처리 위치</th></tr>
+      <tr><td>정밀 위치(GPS)</td><td>현재 위치 표시, 도보·차량 이동 경로에 따른 면적 측정. 기기 안에서 계산합니다. 도보 측정 중에는 <b>알림을 표시한 채(포그라운드 서비스)</b> 위치를 사용하며, 측정을 끝내면 즉시 중단합니다.</td></tr>
+      <tr><td>지도 위 좌표·검색어</td><td>지도·위성사진 표시, 주소·지번 검색, 지적도 경계 조회, 고도 표시 — 아래 3항의 제공자에게 조회 요청으로 전송</td></tr>
+      <tr><td>측정 기록 · 캡처 이미지</td><td>저장기록 보관, 갤러리 저장, 이용자가 선택한 공유</td></tr>
+      <tr><td>구매 정보</td><td>Pro 구독 여부 확인(Google Play 결제). 결제수단 정보는 개발자에게 전달되지 않습니다.</td></tr>
+      <tr><td>광고 식별자 등</td><td>무료 버전의 광고 표시(Google AdMob, 아래 4항)</td></tr>
+    </table>
+
+    <h3>3. 외부 지도·데이터 서비스</h3>
+    <p>Google Maps Platform, NAVER Cloud Platform 지도, 카카오맵 API, 브이월드(국토교통부), 국토정보플랫폼(국토지리정보원), Open-Meteo(고도).</p>
+
+    <h3>4. 광고 (Google AdMob)</h3>
+    <p>무료 버전에는 화면 하단에 Google AdMob 배너 광고가 표시됩니다. AdMob은 광고 제공과 성과 측정을 위해 광고 ID, 기기 정보, IP 기반 대략적 위치, 광고 상호작용 정보를 수집할 수 있습니다. Pro 구독 중에는 광고가 표시되지 않습니다.</p>
+    <ul>
+      <li><b>유럽경제지역·영국·스위스</b> 이용자에게는 처음 실행 시 맞춤 광고 동의 여부를 묻고, 앱의 [설정/도움 → ⚙️ 설정 → 🔒 광고 개인정보 설정]에서 언제든 바꿀 수 있습니다.</li>
+      <li>기기의 [설정 → 개인정보 보호(또는 Google) → 광고]에서 광고 ID를 재설정하거나 삭제해 맞춤 광고를 끌 수 있습니다.</li>
+      <li>Google의 정보 처리 방식: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
+    </ul>
+
+    <h3>5. 앱 권한</h3>
+    <ul>
+      <li>위치(정밀·대략), 포그라운드 서비스(위치): 면적 측정·도보 경로 기록 — 거부해도 터치 측정은 가능합니다</li>
+      <li>알림: 도보 측정 중 진행 표시</li>
+      <li>인터넷, 진동, 광고 ID(AdMob)</li>
+    </ul>
+
+    <h3>6. 보관 기간 · 파기 · 삭제 방법</h3>
+    <p>기기에 저장된 정보는 이용자가 앱에서 삭제하거나 앱을 삭제하면 함께 삭제됩니다. 개발자 서버에는 보관하는 개인정보가 없습니다.</p>
+
+    <h3>7. 아동</h3>
+    <p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 알면서 수집하지 않습니다.</p>
+
+    <h3>8. 개인정보 보호책임자 · 문의</h3>
+    <table>
+      <tr><th>개인정보 보호책임자</th><td>이현철 (대표)</td></tr>
+      <tr><th>이메일</th><td>cobolstar@gmail.com</td></tr>
+    </table>
+
+    <h3>9. 변경</h3>
+    <p>이 방침이 바뀌면 이 페이지에 시행일과 함께 게시합니다.</p>
+  </div>
+</section>
+
+<!-- ================= 문의 · 지원 ================= -->
+<section id="support">
+  <h2>문의 · 지원</h2>
+  <div class="card">
+    <details open>
+      <summary>구독 해지 · 환불</summary>
+      <p>구독은 <b>Google Play</b>에서 해지합니다. (앱 삭제만으로는 해지되지 않습니다)<br>
+      Play 스토어 앱 → 오른쪽 위 프로필 → [결제 및 정기 결제] → [정기 결제] → 앱 선택 → [정기 결제 취소].<br>
+      해지해도 이미 결제한 기간까지는 이용할 수 있습니다. 환불은 Google Play 환불 정책을 따르며, 문의는 아래 메일로 받습니다.</p>
+    </details>
+    <details>
+      <summary>광고 · 맞춤 광고 설정 (스마트 면적측정)</summary>
+      <p>무료 버전에만 광고가 있고, Pro 구독 시 사라집니다. 맞춤 광고는 기기의 광고 ID 설정에서 끌 수 있으며, 유럽 등 동의 대상 지역은 앱 설정의 [🔒 광고 개인정보 설정]에서 동의를 바꿀 수 있습니다.</p>
+    </details>
+    <details>
+      <summary>데이터 삭제</summary>
+      <p>두 앱 모두 계정과 서버 저장소가 없어 개발자에게 삭제를 요청할 데이터가 없습니다. 앱 안의 [저장기록]에서 지우거나 앱을 삭제하면 기기의 데이터가 삭제됩니다. (스마트 손해평가는 기기를 바꿀 때 [설정/도움 → 백업]으로 파일을 내보내 옮길 수 있습니다)</p>
+    </details>
+    <details>
+      <summary>측정값의 효력 (면책)</summary>
+      <p>앱의 면적·거리·계산 결과는 GPS·지도·항공사진의 오차를 포함한 참고용 수치이며, 법적 효력이 있는 측량이나 공식 전산 결과를 대신하지 않습니다. 결과값 오류로 인한 직·간접적 손해에 대해 개발자는 책임을 지지 않습니다.</p>
+    </details>
+    <p style="margin:14px 0 0">📧 <a href="mailto:cobolstar@gmail.com">cobolstar@gmail.com</a> · ☎ 010-3234-8316</p>
+  </div>
+</section>
+
+</main>
 
 <footer>
-    <p><strong>선우테크 (Sunwoo Tech)</strong></p>
-    <p>사업자등록번호: [291-28-00667] | 대표: 이현철</p>
-    <p>주소: 서울특별시 금천구 가산동 459-23 에이스비즈포레 9층 912호</p>
-    <p>전화번호: [010-3234-8316] | 이메일: [cobolstar@gmail.com]</p>
-    <p style="margin-top: 20px; font-size: 12px; color: #7f8c8d;">&copy; 2026 Sunwoo Tech. All rights reserved.</p>
+  <div class="wrap">
+    <b>선우테크 (SUNWOOTECH)</b><br>
+    대표 이현철 · 사업자등록번호 291-28-00667<br>
+    서울특별시 금천구 가산디지털2로 173, 9층 912호 (가산동, 에이스비즈포레)<br>
+    ☎ 010-3234-8316 · ✉ cobolstar@gmail.com<br>
+    © 2026 SUNWOOTECH. All rights reserved.
+  </div>
 </footer>
 
 </body>
