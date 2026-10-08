@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>지번 자동 그리기 — 스마트 손해평가 사용설명서</title>
+<meta name="description" content="지번을 눌러 필지 경계를 한 번에 그리고, 공부상 면적과 비교하며, 그린 구역이 어느 지번에 걸쳐 있는지 분석하는 방법.">
+<link rel="stylesheet" href="manual.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="index.html">← 사용설명서 목차</a> · 면적측정</header>
+<h1>지번 자동 그리기</h1>
+
+<p class="lead">지적도의 필지 경계를 손으로 찍지 않고 한 번에 가져오는 기능입니다. <span class="pro">Pro</span></p>
+<h2>한 필지만 그릴 때 — 길게 누르기</h2>
+<ol class="steps">
+<li><b>지도에서 필지 안쪽을 1~2초 길게 누릅니다.</b> 경계가 빨간 구역으로 그려집니다.</li>
+<li><b>아래 상태창에서 면적과 공부상 면적 오차를 확인합니다.</b> 토지대장 면적이 기준 면적으로 자동으로 들어가고, 측정값과의 차이(%)가 나옵니다.</li>
+</ol>
+<p>이미 다른 구역이 그려져 있어도 길게 누르면 새 구역으로 추가됩니다.</p>
+<h2>여러 필지를 이어서 그릴 때 — 자동 그리기 버튼</h2>
+<ol class="steps">
+<li>오른쪽 아래 「🛠️」 → 「✨ 지번 자동 그리기」를 누릅니다.</li>
+<li>버튼이 켜진 상태에서 필지를 차례로 짧게 누릅니다. 누를 때마다 필지가 하나씩 추가되고 면적이 합산됩니다.</li>
+<li>다 그렸으면 「✨ 지번 자동 그리기」를 다시 눌러 끕니다.</li>
+</ol>
+<figure><img src="img/area-parcel.png" alt="여러 필지를 이어서 그린 화면" onerror="this.parentNode.classList.add('noimg')"><div class="ph">화면 사진 자리 (img/area-parcel.png)</div><figcaption>여러 필지를 이어서 그린 화면</figcaption></figure>
+<h2>그린 필지를 실제 경작지에 맞추기</h2>
+<p>필지 일부만 경작했거나 경계가 실제와 다르면 「✂️ 점 편집」으로 다듬습니다. 경계선을 누르면 점이 추가되고, 점을 끌면 옮겨집니다. <a href="area-edit.html">점 편집</a>을 참고하세요.</p>
+<p>필지 안에 묘지·창고처럼 빼야 할 곳이 있으면 「➖ 면적 제외」로 그 부분을 따로 그립니다.</p>
+<h2>지번별 면적 분석</h2>
+<p>손으로 그린 구역이 여러 필지에 걸쳐 있을 때, 지번마다 얼마나 들어가는지 보여줍니다. 「🛠️」 → 「📊 지번별 면적 분석」을 누르세요.</p>
+<ul>
+<li>지번마다 편입 면적이 나오고, 「🏛️ 공부상 면적(전체) 확인하기」로 그 지번의 토지대장 면적을 조회할 수 있습니다.</li>
+<li>1% 미만으로 살짝 걸친 지번과 도로·구거 같은 국공유지는 기본으로 숨겨집니다. 결과창 아래 「전체 보기」로 볼 수 있습니다.</li>
+</ul>
+<h2>그려지지 않을 때</h2>
+<div class="warn">도로(도), 구거(구), 하천(천), 철도용지(철)처럼 길게 이어진 국공유지는 면적이 지나치게 커서 자동으로 그려지지 않습니다. 지적도를 켜고 손으로 모서리를 찍어 주세요.</div>
+<ul>
+<li>인터넷이 안 되면 지적도 정보를 가져올 수 없습니다.</li>
+<li>검색으로 이동했는데 다른 필지가 잡히면, 지도에서 원하는 필지를 직접 길게 누르세요.</li>
+</ul>
+
+<div class="nav2"><a href="area-basic.html">← 면적측정 기본</a><a href="area-edit.html">점 편집 →</a></div>
+<footer>앱 버전 1.1.87 기준 · 선우테크 · 계산 결과는 참고용입니다. 최종 값은 손해평가 전산과 대조해 확인하세요.</footer>
+</div>
+</body>
+</html>
