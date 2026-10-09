@@ -1,50 +1,38 @@
 {
-  "latestVersion": "1.1.89",
+  "latestVersion": "1.1.90",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.82",
+  "minSupportedVersion": "1.1.89",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🌐 포르투갈어 추가, 사용설명서 영어·스페인어·포르투갈어 지원",
-    "📖 앱에서 사용설명서 바로 열기 (왼쪽 메뉴 맨 위 📖 · 설정/도움)",
-    "➖ 구역이 겹치면 겹친 부분은 한 번만 계산 (면적 옆에 겹침·제외 표시)",
-    "✨ 지번 자동 그리기: 이웃 지번이 '이미 추가된 구역'으로 잘못 나오던 문제 수정",
-    "✈️ 과거 항공사진 2025년이 2024년으로만 보이던 문제 수정",
-    "🗺️ 왼쪽 메뉴가 검색창과 겹치던 문제 수정",
-    "📍 점 편집에서 핀을 탭하면 삭제 확인이 잘 뜨도록 수정"
+    "🌐 포르투갈어(Português) 추가",
+    "📖 사용설명서 영어·스페인어·포르투갈어 지원 (앱 언어에 맞춰 열림)",
+    "🌍 해외에서는 구글 위성지도로 시작 (네이버·카카오·항공사진은 한국 안에서만)",
+    "🗺️ 구글 위성(글자 없음)·구글 지형도 추가, 해외에서는 네이버·카카오·항공사진에 「한국 안에서만」 표시"
   ],
-  "releaseDev": "현장에서 바로 찾아볼 수 있도록 사용설명서를 연결했습니다. 불편한 점은 화면 그대로 알려주세요.",
+  "releaseDev": "해외 사용자를 위해 언어와 지도를 다듬었습니다. 불편한 점은 화면 그대로 알려주세요.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🌐 Portuguese added; the user guide is now in English, Spanish and Portuguese",
-    "📖 Open the user guide from the app (📖 at the top of the left menu · Settings)",
-    "➖ Overlapping zones are counted once (overlap shown next to the area)",
-    "✨ Auto parcel drawing: neighbors no longer wrongly blocked as \"already added\"",
-    "✈️ Historical aerial photos: 2025 imagery now shows",
-    "🗺️ The left menu no longer overlaps the search bar",
-    "📍 Point edit: tapping a pin reliably asks to delete it"
+    "🌐 Portuguese (Português) added",
+    "📖 User guide now in English, Spanish and Portuguese (opens in your app language)",
+    "🌍 Outside Korea the app starts on the Google satellite map (Naver/Kakao maps and past aerial photos are Korea only)",
+    "🗺️ New maps: Google Satellite (no labels) and Google Terrain; Korea-only maps are marked in the list"
   ],
-  "releaseDev_en": "We linked a user guide you can open right from the app. Tell us anything inconvenient — it really helps.",
+  "releaseDev_en": "We polished languages and maps for users outside Korea. Tell us anything inconvenient — it really helps.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🌐 Portugués añadido; la guía de uso ya está en inglés, español y portugués",
-    "📖 Abre la guía de uso desde la app (📖 arriba en el menú izquierdo · Ajustes)",
-    "➖ Las zonas superpuestas se cuentan una sola vez (se muestra junto al área)",
-    "✨ Dibujo automático de parcelas: las vecinas ya no se bloquean como \"ya añadidas\"",
-    "✈️ Fotos aéreas históricas: ya se muestran las imágenes de 2025",
-    "🗺️ El menú izquierdo ya no tapa la barra de búsqueda",
-    "📍 Edición de puntos: al tocar un pin se pide eliminarlo"
+    "🌐 Portugués (Português) añadido",
+    "📖 Guía de uso en inglés, español y portugués (se abre en el idioma de la app)",
+    "🌍 Fuera de Corea la app empieza en el mapa satelital de Google (los mapas Naver/Kakao y las fotos aéreas son solo para Corea)",
+    "🗺️ Nuevos mapas: Satélite Google (sin etiquetas) y Terreno Google; los mapas solo de Corea se marcan en la lista"
   ],
-  "releaseDev_es": "Hemos enlazado una guía de uso que puedes abrir desde la app. Cuéntanos cualquier inconveniente: nos ayuda mucho.",
-  "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea",
+  "releaseDev_es": "Mejoramos idiomas y mapas para usuarios fuera de Corea. Cuéntanos cualquier inconveniente: nos ayuda mucho.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🌐 App agora em português; guia de uso em português, inglês e espanhol",
-    "📖 Abra o guia de uso pelo app (📖 no topo do menu esquerdo · Ajustes)",
-    "➖ Áreas sobrepostas são contadas uma só vez (aparece ao lado da área)",
-    "✨ Desenho automático de lotes: lotes vizinhos não são mais bloqueados como \"já adicionados\" (Coreia)",
-    "✈️ Fotos aéreas históricas: imagens de 2025 já aparecem (Coreia)",
-    "🗺️ O menu esquerdo não cobre mais a barra de busca",
-    "📍 Edição de pontos: tocar em um pino pede para apagá-lo"
+    "🌐 App agora em português",
+    "📖 Guia de uso em português, inglês e espanhol (abre no idioma do app)",
+    "🌍 Fora da Coreia o app começa no mapa de satélite do Google (mapas Naver/Kakao e fotos aéreas só na Coreia)",
+    "🗺️ Novos mapas: Satélite Google (sem rótulos) e Terreno Google; mapas só da Coreia aparecem marcados na lista"
   ],
-  "releaseDev_pt": "Agora o app também fala português. Conte o que estiver incomodando — isso nos ajuda muito."
+  "releaseDev_pt": "Agora o app também fala português. Conte o que estiver incomodando — isso nos ajuda muito.",
+  "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
