@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lo básico de la medición — Guía de uso de Smart Area Measure</title>
+<meta name="description" content="Guía de uso de la app Smart Area Measure: mide el área de terrenos y campos tocando el mapa o caminando con GPS.">
+<link rel="stylesheet" href="../manual.css">
+<style>.langbar{font-size:13px;color:var(--sub);margin-top:4px}.langbar a,.langbar b{margin-right:10px}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="index.html">← Índice</a> · Medir<div class="langbar"><a href="../area-basic.html">한국어</a><a href="../en/area-basic.html">English</a><b>Español</b><a href="../pt/area-basic.html">Português</a></div></header>
+<h1>Lo básico de la medición</h1>
+<p class="lead">Hay dos formas de medir un campo: tocar sus esquinas en el mapa o recorrerlo caminando con GPS.</p>
+<div class="card toc">
+<b>En esta página</b>
+<a href="#tap">1. Tocar puntos en el mapa</a>
+<a href="#walk">2. Recorrer el campo caminando (GPS)</a>
+<a href="#result">3. Cómo leer el resultado</a>
+<a href="#left">4. Botones de la izquierda</a>
+<a href="#right">5. Menú de herramientas de la derecha</a>
+<a href="#save">6. Guardar el resultado</a>
+<a href="#mistake">7. Errores frecuentes</a>
+<a href="#diff">8. Si difiere del área oficial</a>
+</div>
+
+<h2 id="tap">1. Tocar puntos en el mapa</h2>
+<p>Mira el mapa satelital y toca las esquinas del campo una tras otra. Puedes medir sin ir al lugar.</p>
+<ol class="steps">
+<li><b>Busca el campo.</b> Escribe una dirección en el cuadro de búsqueda superior, pulsa la tecla de búsqueda (Intro) y toca un resultado. También puedes escribir coordenadas como <code>40.4168, -3.7038</code>. Si estás en el lugar, toca «Mi ubicación».</li>
+<li><b>Toca las esquinas en orden.</b> Recorre el borde en un solo sentido (horario o antihorario). Con 3 puntos ya aparece el área.</li>
+<li><b>Ajusta el último punto.</b> Si el punto que acabas de colocar (naranja) quedó un poco desplazado, arrástralo o usa los botones de flecha (▲▼◀▶) y el joystick de abajo a la derecha. Cada toque de flecha lo mueve unos 10 cm.</li>
+<li><b>¿Te equivocaste?</b> Toca «↺ Deshacer» a la derecha para volver un paso atrás.</li>
+</ol>
+<figure><img src="../img/area-basic-tap.jpg" alt="Medir tocando puntos en el mapa" onerror="this.parentNode.classList.add('noimg')"><div class="ph">Captura de pantalla</div><figcaption>Al tocar las esquinas en orden aparecen la zona roja y su área. (Captura de la versión coreana)</figcaption></figure>
+
+<h2 id="walk">2. Recorrer el campo caminando (GPS)</h2>
+<p>Camina por el borde del campo y la app dibuja la zona siguiendo tu recorrido GPS. Úsalo cuando el límite no se ve en el mapa satelital o cuando necesitas el área realmente cultivada.</p>
+<ol class="steps">
+<li><b>Espera 5–10 segundos en el punto de inicio.</b> Quédate en un lugar despejado hasta que el indicador GPS de la barra de estado se ponga verde (±5 m o mejor).</li>
+<li><b>Toca «🚶 Seguim. a pie» a la izquierda.</b> La primera vez la app pide permiso de ubicación y de notificaciones. Permite ambos para que siga grabando con la pantalla apagada.</li>
+<li><b>Camina por el borde.</b> Sujeta el teléfono con la parte superior hacia donde caminas. En el bolsillo el recorrido sale tembloroso.</li>
+<li><b>Detente 2–3 segundos en cada esquina.</b> Las esquinas salen más nítidas.</li>
+<li><b>Al volver al inicio, toca «🚶 Seguim. a pie» otra vez para terminar.</b></li>
+<li><b>Si la línea sale en zigzag, toca «📐 Corregir recorrido».</b> Quita los puntos saltados y endereza la línea. Si no te gusta, vuelve atrás con «↺ Deshacer».</li>
+</ol>
+<div class="tip">Mientras mides, arriba en el teléfono queda el aviso «Midiendo área». La grabación sigue aunque se apague la pantalla o cambies de app.</div>
+<div class="warn">Bajo árboles densos o cerca de líneas eléctricas el GPS puede saltar más de 1–3 m. Corrige esas partes después con la edición de puntos.</div>
+<p>En tractor o vehículo, usa «🚗 Seguim. vehículo» en el menú de herramientas de la derecha. <span class="pro">Pro</span></p>
+
+<h2 id="result">3. Cómo leer el resultado</h2>
+<p>La barra de estado oscura de abajo muestra el resultado en tiempo real.</p>
+<div class="tbl"><table>
+<tr><th>Se muestra</th><th>Significado</th></tr>
+<tr><td>2086,7 m² (0,2087 ha)</td><td>Área de las zonas dibujadas. Con varias zonas es el total; las zonas excluidas se restan.</td></tr>
+<tr><td>solape −100,6 m² / excl. −25,1 m²</td><td>Si las zonas se superponen, la parte superpuesta se cuenta una sola vez; «excl.» es el área de las zonas excluidas. Ambas ya están restadas del total.</td></tr>
+<tr><td>Puntos 9 | Perímetro 92,3 m</td><td>Número de puntos y longitud del perímetro.</td></tr>
+<tr><td>±6 m Regular</td><td>Radio de error del GPS: ±5 m o mejor es bueno (verde), 5–8 m regular (amarillo), 8–12 m débil (naranja).</td></tr>
+<tr><td>Dirección</td><td>Dirección del primer punto.</td></tr>
+</table></div>
+<p>«⚙️ Opciones» en la barra de estado permite introducir un área de referencia para ver la diferencia en %, o medir el ángulo de un terreno en pendiente para obtener el área horizontal. El área corregida por pendiente es solo de referencia.</p>
+
+<h2 id="left">4. Botones de la izquierda</h2>
+<div class="tbl"><table>
+<tr><th>Botón</th><th>Qué hace</th></tr>
+<tr><td>📖 Guía de uso</td><td>Abre esta guía.</td></tr>
+<tr><td>🧭 Brújula</td><td>Muestra hacia dónde apunta el teléfono. El mapa siempre tiene el norte arriba.</td></tr>
+<tr><td>🎛️ Visualización</td><td>Muestra u oculta los textos de los botones, las etiquetas de área en el mapa, la flecha de tu ubicación y la brújula.</td></tr>
+<tr><td>🧹 Restablecer</td><td>Borra todas las zonas y líneas del mapa.</td></tr>
+<tr><td>📸 Capturar</td><td>Guarda el mapa (sin botones) como imagen.</td></tr>
+<tr><td>🚶 Seguim. a pie</td><td>Empieza o termina la medición caminando.</td></tr>
+<tr><td>📐 Área / 📏 Longitud</td><td>Cambia entre medir área y medir longitud. En modo longitud se ven cada tramo y la longitud total.</td></tr>
+<tr><td>Mi ubicación</td><td>Lleva el mapa a donde estás.</td></tr>
+</table></div>
+
+<h2 id="right">5. Menú de herramientas de la derecha</h2>
+<p>Toca «🛠️» abajo a la derecha para abrirlo.</p>
+<div class="tbl"><table>
+<tr><th>Botón</th><th>Qué hace</th></tr>
+<tr><td>✏️ Continuar</td><td>Sigue añadiendo puntos a la zona actual. Es el modo por defecto.</td></tr>
+<tr><td>➕ Añadir área</td><td>Empieza otra zona en otro lugar. Las áreas se suman.</td></tr>
+<tr><td>➖ Excluir área</td><td>Dibuja una parte a restar dentro de una zona (estanque, edificio, tumba). Esa área se resta del total.</td></tr>
+<tr><td>✂️ Edición de puntos <span class="pro">Pro</span></td><td>Mueve o borra puntos, o toca una línea del borde para añadir uno.</td></tr>
+<tr><td>🗑️ Borrar zona <span class="pro">Pro</span></td><td>Borra solo una de varias zonas.</td></tr>
+<tr><td>✨ Dibujar parcela <span class="pro">Pro</span> <span class="soon">solo en Corea</span></td><td>Toca parcelas para dibujar sus límites catastrales.</td></tr>
+<tr><td>🚗 Seguim. vehículo <span class="pro">Pro</span></td><td>Graba el recorrido a velocidad de vehículo.</td></tr>
+<tr><td>↺ Deshacer / ↻ Rehacer</td><td>Retrocede o avanza un paso.</td></tr>
+<tr><td>📌 Historial de mediciones <span class="pro">Pro</span></td><td>Guarda las coordenadas dibujadas con un nombre para cargarlas más tarde.</td></tr>
+</table></div>
+
+<h2 id="save">6. Guardar el resultado</h2>
+<ul>
+<li><b>Como imagen</b> — «📸 Capturar» guarda el mapa y el área como imagen en tu galería.</li>
+<li><b>Como datos editables</b> — «📌 Historial de mediciones» conserva las coordenadas de los puntos. Cárgalas después para seguir o corregir la medición. Hasta 200 registros. <span class="pro">Pro</span></li>
+</ul>
+
+<h2 id="mistake">7. Errores frecuentes</h2>
+<div class="warn"><b>Si las líneas se cruzan, el área sale mal.</b> Si saltas de un punto a otro y las líneas se cruzan en forma de ocho o de estrella, el área sale 0 o un valor extraño. Toca siempre en un solo sentido alrededor del borde.</div>
+<ul>
+<li><b>Escribiste una dirección pero no tocaste un resultado</b> — el mapa no se mueve. Pulsa la tecla de búsqueda y toca un resultado.</li>
+<li><b>Mediste dos campos separados con «Continuar»</b> — quedan unidos en una sola zona. Toca «➕ Añadir área» antes de empezar el segundo campo.</li>
+<li><b>Empezaste a caminar antes de que el GPS estuviera listo</b> — el punto de inicio queda desplazado unos metros. Espera al verde.</li>
+</ul>
+
+<h2 id="diff">8. Si difiere del área oficial</h2>
+<p>El área de la app puede diferir del registro catastral en un 0,5–1% aproximadamente. Los registros usan una proyección plana, mientras que las apps de mapas calculan sobre la Tierra redonda, y las imágenes satelitales pueden estar desplazadas algunos metros. Ocurre en todas las apps de mapas.</p>
+<div class="warn">Para documentos legales, ventas o seguros, usa el área oficial medida por un topógrafo. El valor de la app es una referencia para comprobar el tamaño en el lugar.</div>
+<div class="nav2"><a href="index.html">← Índice</a><a href="area-edit.html">Edición de puntos →</a></div>
+<footer>Versión de la app 1.1.89 · Sunwoo Tech</footer>
+</div>
+</body>
+</html>

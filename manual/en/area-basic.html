@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Measuring basics — Smart Area Measure user guide</title>
+<meta name="description" content="User guide for the Smart Area Measure app: measure land and field area by tapping on the map or walking with GPS.">
+<link rel="stylesheet" href="../manual.css">
+<style>.langbar{font-size:13px;color:var(--sub);margin-top:4px}.langbar a,.langbar b{margin-right:10px}</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><a href="index.html">← Contents</a> · Measure<div class="langbar"><a href="../area-basic.html">한국어</a><b>English</b><a href="../es/area-basic.html">Español</a><a href="../pt/area-basic.html">Português</a></div></header>
+<h1>Measuring basics</h1>
+<p class="lead">There are two ways to measure a field: tap its corners on the map, or walk around it with GPS.</p>
+<div class="card toc">
+<b>On this page</b>
+<a href="#tap">1. Tap points on the map</a>
+<a href="#walk">2. Walk around the field (GPS)</a>
+<a href="#result">3. Reading the result</a>
+<a href="#left">4. Left buttons</a>
+<a href="#right">5. Right tool menu</a>
+<a href="#save">6. Keeping the result</a>
+<a href="#mistake">7. Common mistakes</a>
+<a href="#diff">8. When it differs from the official area</a>
+</div>
+
+<h2 id="tap">1. Tap points on the map</h2>
+<p>Look at the satellite map and tap the corners of the field one after another. You can measure without going to the site.</p>
+<ol class="steps">
+<li><b>Find the field.</b> Type an address in the search box at the top and press the search (Enter) key, then tap a result. You can also type coordinates such as <code>40.4168, -3.7038</code>. If you are on site, tap “My location”.</li>
+<li><b>Tap the corners in order.</b> Go around the edge in one direction (clockwise or counter-clockwise). After 3 points the area appears.</li>
+<li><b>Adjust the last point.</b> If the point you just placed (orange) is a little off, drag it, or use the arrow buttons (▲▼◀▶) and joystick at the bottom right. Each arrow tap moves it about 10 cm.</li>
+<li><b>Made a mistake?</b> Tap “↺ Undo” on the right to go back one step.</li>
+</ol>
+<figure><img src="../img/area-basic-tap.jpg" alt="Measuring by tapping points on the map" onerror="this.parentNode.classList.add('noimg')"><div class="ph">Screenshot</div><figcaption>Tap the corners in order and the red zone and its area appear. (Screenshot from the Korean version)</figcaption></figure>
+
+<h2 id="walk">2. Walk around the field (GPS)</h2>
+<p>Walk along the edge of the field and the app draws the zone along your GPS path. Use it when the boundary is not visible on the satellite map, or when you need the area actually being farmed.</p>
+<ol class="steps">
+<li><b>Wait 5–10 seconds at the starting point.</b> Stand in an open spot until the GPS indicator in the status bar turns green (±5 m or better).</li>
+<li><b>Tap “🚶 Walk track” on the left.</b> The first time, the app asks for location and notification permission. Allow both so recording continues with the screen off.</li>
+<li><b>Walk along the edge.</b> Hold the phone with its top pointing in the direction you walk. In a pocket the path gets shaky.</li>
+<li><b>Stop for 2–3 seconds at each corner.</b> Corners come out sharper.</li>
+<li><b>Back at the start, tap “🚶 Walk track” again to finish.</b></li>
+<li><b>If the line zigzags, tap “📐 Path fix”.</b> It removes jumpy points and straightens the line. Undo it with “↺ Undo” if you do not like the result.</li>
+</ol>
+<div class="tip">While measuring, a “Measuring area” notification stays at the top of the phone. Recording continues even if the screen turns off or you switch apps.</div>
+<div class="warn">Under dense trees or near power lines GPS can jump by more than 1–3 m. Clean up those parts afterwards with point edit.</div>
+<p>On a tractor or in a vehicle, use “🚗 Vehicle track” in the right tool menu. <span class="pro">Pro</span></p>
+
+<h2 id="result">3. Reading the result</h2>
+<p>The dark status bar at the bottom shows the result in real time.</p>
+<div class="tbl"><table>
+<tr><th>Shown</th><th>Meaning</th></tr>
+<tr><td>2,086.7 m² (0.2087 ha)</td><td>Area of the zones you drew. With several zones it is the total; excluded zones are subtracted.</td></tr>
+<tr><td>overlap −100.6 m² / excl. −25.1 m²</td><td>If zones overlap, the overlapping part is counted only once; “excl.” is the area of excluded zones. Both are already subtracted from the total.</td></tr>
+<tr><td>Points 9 | Perimeter 92.3 m</td><td>Number of points and perimeter length.</td></tr>
+<tr><td>±6 m Fair</td><td>GPS error radius: ±5 m or better is good (green), 5–8 m fair (yellow), 8–12 m weak (orange).</td></tr>
+<tr><td>Address</td><td>Address of the first point.</td></tr>
+</table></div>
+<p>“⚙️ Options” in the status bar lets you enter a reference area to see the difference in %, or measure the slope angle of a sloped field to get the horizontal area. The slope-corrected area is for reference only.</p>
+
+<h2 id="left">4. Left buttons</h2>
+<div class="tbl"><table>
+<tr><th>Button</th><th>What it does</th></tr>
+<tr><td>📖 User guide</td><td>Opens this guide.</td></tr>
+<tr><td>🧭 Compass</td><td>Shows which way the phone is pointing. The map always has north up.</td></tr>
+<tr><td>🎛️ Display</td><td>Shows or hides button labels, area labels on the map, your location arrow and the compass.</td></tr>
+<tr><td>🧹 Reset</td><td>Clears all zones and lines from the map.</td></tr>
+<tr><td>📸 Capture</td><td>Saves the map (without buttons) as a picture.</td></tr>
+<tr><td>🚶 Walk track</td><td>Starts or ends measuring by walking.</td></tr>
+<tr><td>📐 Area / 📏 Length</td><td>Switches between area and length measurement. Length mode shows each segment and the total length.</td></tr>
+<tr><td>My location</td><td>Moves the map to where you are.</td></tr>
+</table></div>
+
+<h2 id="right">5. Right tool menu</h2>
+<p>Tap “🛠️” at the bottom right to open it.</p>
+<div class="tbl"><table>
+<tr><th>Button</th><th>What it does</th></tr>
+<tr><td>✏️ Continue</td><td>Keeps adding points to the current zone. This is the default.</td></tr>
+<tr><td>➕ Add area</td><td>Starts another zone somewhere else. Areas are added together.</td></tr>
+<tr><td>➖ Exclude area</td><td>Draws a part to subtract inside a zone (pond, building, grave). That area is removed from the total.</td></tr>
+<tr><td>✂️ Point edit <span class="pro">Pro</span></td><td>Move or delete points, or tap a boundary line to add one.</td></tr>
+<tr><td>🗑️ Delete zone <span class="pro">Pro</span></td><td>Deletes just one of several zones.</td></tr>
+<tr><td>✨ Auto-draw parcel <span class="pro">Pro</span> <span class="soon">Korea only</span></td><td>Tap parcels to draw their cadastral boundaries.</td></tr>
+<tr><td>🚗 Vehicle track <span class="pro">Pro</span></td><td>Records the path at vehicle speed.</td></tr>
+<tr><td>↺ Undo / ↻ Redo</td><td>Goes back or forward one step.</td></tr>
+<tr><td>📌 Measurement history <span class="pro">Pro</span></td><td>Saves the drawn coordinates with a name so you can load them again later.</td></tr>
+</table></div>
+
+<h2 id="save">6. Keeping the result</h2>
+<ul>
+<li><b>As a picture</b> — “📸 Capture” saves the map and area as an image in your gallery.</li>
+<li><b>As editable data</b> — “📌 Measurement history” keeps the point coordinates. Load them later to continue or correct the measurement. Up to 200 entries. <span class="pro">Pro</span></li>
+</ul>
+
+<h2 id="mistake">7. Common mistakes</h2>
+<div class="warn"><b>Crossed lines give a wrong area.</b> If you skip around and the lines cross like a figure 8 or a star, the area becomes 0 or a strange value. Always tap in one direction around the edge.</div>
+<ul>
+<li><b>Typed an address but did not tap a result</b> — the map does not move. Press the search key and tap a result.</li>
+<li><b>Measured two separate fields with “Continue”</b> — they become one zone. Tap “➕ Add area” before starting the second field.</li>
+<li><b>Started walking before GPS was ready</b> — the start point is off by a few metres. Wait for green first.</li>
+</ul>
+
+<h2 id="diff">8. When it differs from the official area</h2>
+<p>The app's area can differ from the land register by about 0.5–1%. Land registers use a flat map projection, while map apps calculate on the round Earth, and satellite images can be shifted by a few metres. This happens in every map app.</p>
+<div class="warn">For legal documents, sales or insurance, use the official surveyed area. The app's value is a reference for checking the size on site.</div>
+<div class="nav2"><a href="index.html">← Contents</a><a href="area-edit.html">Point edit →</a></div>
+<footer>App version 1.1.89 · Sunwoo Tech</footer>
+</div>
+</body>
+</html>

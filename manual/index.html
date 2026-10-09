@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrap">
-<header class="top">선우테크 · 사용설명서</header>
+<header class="top">선우테크 · 사용설명서<div style="font-size:13px;margin-top:4px"><b style="margin-right:10px">한국어</b><a style="margin-right:10px" href="en/index.html">English</a><a style="margin-right:10px" href="es/index.html">Español</a><a href="pt/index.html">Português</a></div></header>
 <h1>스마트 손해평가 사용설명서</h1>
 <p class="lead">앱 아래쪽 메뉴 5개 순서대로 정리했습니다. 필요한 기능을 골라 보세요. <span class="pro">Pro</span> 표시는 Pro 구독에서 쓸 수 있는 기능입니다.</p>
 
@@ -24,7 +24,7 @@
 </ul>
 </div>
 
-<div class="card">
+<div class="card full-only">
 <h3 style="margin-top:0">🛠️ 현장도구</h3>
 <ul class="menu">
 <li><a href="tool-counter.html">카운터</a><span class="d">착과수·표본 개수 세기</span></li>
@@ -33,12 +33,13 @@
 </ul>
 </div>
 
-<div class="card">
+<div class="card full-only">
 <h3 style="margin-top:0">🧮 평가계산</h3>
 <ul class="menu">
 <li><a href="calc-common.html">계산기 공통 사용법</a><span class="d">조사종류 고르기, 표본 입력, 리포트·조사서 저장, 이력</span></li>
 <li><a href="calc-rice.html">논작물(벼·밀·보리 등) 수확량조사</a></li>
 <li><a href="calc-jujube.html">대추 수확량조사</a></li>
+<li><a href="calc-kiwi.html">참다래 수확량조사</a></li>
 <li><a href="calc-fruit-yield.html">감귤·밤·호두·유자</a></li>
 <li><a href="calc-pepper.html">고추/브로콜리 생산비보장 손해조사</a></li>
 <li><a href="calc-prodcost.html">생산비보장 조사(배추·무·파·메밀 등)</a></li>
@@ -64,7 +65,11 @@
 </ul>
 </div>
 
-<footer>앱 버전 1.1.87 기준 · 선우테크</footer>
+<footer>앱 버전 1.1.89 기준 · 선우테크</footer>
 </div>
+<script>
+// 스마트 면적측정 앱에서 열면(?app=area) 계산기·현장도구 묶음을 숨긴다
+if (/[?&]app=area/.test(location.search)) document.querySelectorAll(".full-only").forEach(function (e) { e.style.display = "none"; });
+</script>
 </body>
 </html>
