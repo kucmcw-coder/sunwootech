@@ -1,30 +1,50 @@
 {
-  "latestVersion": "1.1.87",
+  "latestVersion": "1.1.89",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.86",
+  "minSupportedVersion": "1.1.82",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "📍 점 편집에서 경계선을 탭하면 점이 추가됩니다.",
-    "🔎 본번이 한두 자리인 지번의 부번(예: 1-50)이 검색되지 않던 문제 수정",
-    "🛰️ 도보·차량 측정 중 상단 알림이 보이지 않던 문제 수정",
-    "🖼️ 안정성 개선"
+    "🌐 포르투갈어 추가, 사용설명서 영어·스페인어·포르투갈어 지원",
+    "📖 앱에서 사용설명서 바로 열기 (왼쪽 메뉴 맨 위 📖 · 설정/도움)",
+    "➖ 구역이 겹치면 겹친 부분은 한 번만 계산 (면적 옆에 겹침·제외 표시)",
+    "✨ 지번 자동 그리기: 이웃 지번이 '이미 추가된 구역'으로 잘못 나오던 문제 수정",
+    "✈️ 과거 항공사진 2025년이 2024년으로만 보이던 문제 수정",
+    "🗺️ 왼쪽 메뉴가 검색창과 겹치던 문제 수정",
+    "📍 점 편집에서 핀을 탭하면 삭제 확인이 잘 뜨도록 수정"
   ],
-  "releaseDev": "보내주신 의견(점 추가, 지번 검색, 측정 중 알림)을 반영했습니다. 불편한 점은 화면 그대로 알려주세요.",
+  "releaseDev": "현장에서 바로 찾아볼 수 있도록 사용설명서를 연결했습니다. 불편한 점은 화면 그대로 알려주세요.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "📍 In point edit, tap a boundary line to add a point.",
-    "🔎 Fixed Korean lot-number search for sub-numbers under 1–2 digit lots (e.g. 1-50).",
-    "🛰️ Fixed the missing status-bar notice while walk/vehicle measuring.",
-    "🖼️ Stability improvements"
+    "🌐 Portuguese added; the user guide is now in English, Spanish and Portuguese",
+    "📖 Open the user guide from the app (📖 at the top of the left menu · Settings)",
+    "➖ Overlapping zones are counted once (overlap shown next to the area)",
+    "✨ Auto parcel drawing: neighbors no longer wrongly blocked as \"already added\"",
+    "✈️ Historical aerial photos: 2025 imagery now shows",
+    "🗺️ The left menu no longer overlaps the search bar",
+    "📍 Point edit: tapping a pin reliably asks to delete it"
   ],
-  "releaseDev_en": "We added what you asked for. Tell us anything inconvenient — it really helps.",
+  "releaseDev_en": "We linked a user guide you can open right from the app. Tell us anything inconvenient — it really helps.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "📍 En la edición de puntos, toca una línea del borde para añadir un punto.",
-    "🔎 Corregida la búsqueda de parcelas coreanas con subnúmero (p. ej., 1-50).",
-    "🛰️ Corregido el aviso en la barra de estado que no aparecía durante la medición a pie o en vehículo.",
-    "🖼️ Mejoras de estabilidad"
+    "🌐 Portugués añadido; la guía de uso ya está en inglés, español y portugués",
+    "📖 Abre la guía de uso desde la app (📖 arriba en el menú izquierdo · Ajustes)",
+    "➖ Las zonas superpuestas se cuentan una sola vez (se muestra junto al área)",
+    "✨ Dibujo automático de parcelas: las vecinas ya no se bloquean como \"ya añadidas\"",
+    "✈️ Fotos aéreas históricas: ya se muestran las imágenes de 2025",
+    "🗺️ El menú izquierdo ya no tapa la barra de búsqueda",
+    "📍 Edición de puntos: al tocar un pin se pide eliminarlo"
   ],
-  "releaseDev_es": "Hemos añadido lo que pedisteis. Cuéntanos cualquier inconveniente: nos ayuda mucho.",
-  "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
+  "releaseDev_es": "Hemos enlazado una guía de uso que puedes abrir desde la app. Cuéntanos cualquier inconveniente: nos ayuda mucho.",
+  "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea",
+  "releaseNotes_pt": [
+    "[✨ Novidades]",
+    "🌐 App agora em português; guia de uso em português, inglês e espanhol",
+    "📖 Abra o guia de uso pelo app (📖 no topo do menu esquerdo · Ajustes)",
+    "➖ Áreas sobrepostas são contadas uma só vez (aparece ao lado da área)",
+    "✨ Desenho automático de lotes: lotes vizinhos não são mais bloqueados como \"já adicionados\" (Coreia)",
+    "✈️ Fotos aéreas históricas: imagens de 2025 já aparecem (Coreia)",
+    "🗺️ O menu esquerdo não cobre mais a barra de busca",
+    "📍 Edição de pontos: tocar em um pino pede para apagá-lo"
+  ],
+  "releaseDev_pt": "Agora o app também fala português. Conte o que estiver incomodando — isso nos ajuda muito."
 }
