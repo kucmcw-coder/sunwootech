@@ -1,38 +1,38 @@
 {
-  "latestVersion": "1.1.90",
+  "latestVersion": "1.1.92",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.89",
+  "minSupportedVersion": "1.1.91",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🌐 포르투갈어(Português) 추가",
-    "📖 사용설명서 영어·스페인어·포르투갈어 지원 (앱 언어에 맞춰 열림)",
-    "🌍 해외에서는 구글 위성지도로 시작 (네이버·카카오·항공사진은 한국 안에서만)",
-    "🗺️ 구글 위성(글자 없음)·구글 지형도 추가, 해외에서는 네이버·카카오·항공사진에 「한국 안에서만」 표시"
+    "🎁 광고 1편 보고 1시간 Pro 체험 (하루 1번) — 점 편집·구역 삭제·구역 무제한·Esri 위성·과거 항공사진, 광고 없음",
+    "🕘 Esri 위성(시기별)·✈️ 과거 항공사진에서도 면적 측정 — 점 찍기·편집·GPS 걷기",
+    "❓ 면적측정 사용설명서 버튼을 화면 오른쪽 위 「?」로 옮김",
+    "🔒 Pro 기능 안내 창을 하나로 정리(체험·구독 기능 구분)"
   ],
-  "releaseDev": "해외 사용자를 위해 언어와 지도를 다듬었습니다. 불편한 점은 화면 그대로 알려주세요.",
+  "releaseDev": "광고 1편으로 Pro 주요 기능을 1시간 써 볼 수 있게 했습니다. 지번 자동 그리기·차량 추적·측정 이력은 구독 전용입니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🌐 Portuguese (Português) added",
-    "📖 User guide now in English, Spanish and Portuguese (opens in your app language)",
-    "🌍 Outside Korea the app starts on the Google satellite map (Naver/Kakao maps and past aerial photos are Korea only)",
-    "🗺️ New maps: Google Satellite (no labels) and Google Terrain; Korea-only maps are marked in the list"
+    "🎁 Watch one ad for a 1-hour Pro trial (once a day): point edit, delete zone, unlimited zones, Esri Satellite, past aerial photos, no ads",
+    "🕘 Measure on Esri Satellite (by date) and ✈️ past aerial photos too — tap points, edit, GPS walk",
+    "❓ The user guide button is now the “?” at the top right of the map",
+    "🔒 One clear Pro notice that shows trial vs. subscription features"
   ],
-  "releaseDev_en": "We polished languages and maps for users outside Korea. Tell us anything inconvenient — it really helps.",
+  "releaseDev_en": "Try the main Pro features for an hour with one ad. Auto-draw parcel, vehicle tracking and history stay subscription-only.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🌐 Portugués (Português) añadido",
-    "📖 Guía de uso en inglés, español y portugués (se abre en el idioma de la app)",
-    "🌍 Fuera de Corea la app empieza en el mapa satelital de Google (los mapas Naver/Kakao y las fotos aéreas son solo para Corea)",
-    "🗺️ Nuevos mapas: Satélite Google (sin etiquetas) y Terreno Google; los mapas solo de Corea se marcan en la lista"
+    "🎁 Mira un anuncio y prueba Pro 1 hora (una vez al día): edición de puntos, borrar zona, zonas sin límite, Satélite Esri, fotos aéreas históricas, sin anuncios",
+    "🕘 Mide también en el Satélite Esri (por fecha) y ✈️ fotos aéreas históricas: puntos, edición y caminata GPS",
+    "❓ El botón de la guía ahora es el «?» arriba a la derecha del mapa",
+    "🔒 Un único aviso Pro que separa las funciones de la prueba y de la suscripción"
   ],
-  "releaseDev_es": "Mejoramos idiomas y mapas para usuarios fuera de Corea. Cuéntanos cualquier inconveniente: nos ayuda mucho.",
+  "releaseDev_es": "Prueba las principales funciones Pro durante una hora con un anuncio. Dibujar parcela, seguimiento en vehículo e historial siguen siendo de suscripción.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🌐 App agora em português",
-    "📖 Guia de uso em português, inglês e espanhol (abre no idioma do app)",
-    "🌍 Fora da Coreia o app começa no mapa de satélite do Google (mapas Naver/Kakao e fotos aéreas só na Coreia)",
-    "🗺️ Novos mapas: Satélite Google (sem rótulos) e Terreno Google; mapas só da Coreia aparecem marcados na lista"
+    "🎁 Assista a um anúncio e teste o Pro por 1 hora (uma vez por dia): edição de pontos, apagar área, áreas sem limite, Satélite Esri, fotos aéreas históricas, sem anúncios",
+    "🕘 Meça também no Satélite Esri (por data) e ✈️ fotos aéreas históricas: pontos, edição e caminhada GPS",
+    "❓ O botão do guia agora é o «?» no canto superior direito do mapa",
+    "🔒 Um único aviso Pro que separa as funções do teste e da assinatura"
   ],
-  "releaseDev_pt": "Agora o app também fala português. Conte o que estiver incomodando — isso nos ajuda muito.",
+  "releaseDev_pt": "Teste os principais recursos Pro por uma hora com um anúncio. Desenhar lote, rastreamento em veículo e histórico continuam exclusivos da assinatura.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
