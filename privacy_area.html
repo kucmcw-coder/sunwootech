@@ -22,7 +22,7 @@
 
 <section id="ko">
 <h1>스마트 면적측정 개인정보처리방침</h1>
-<p class="muted">시행일: 2026년 09월 30일 · 앱: 스마트 면적측정 (com.sunwootech.smartarea)</p>
+<p class="muted">시행일: 2026년 10월 10일 · 앱: 스마트 면적측정 (com.sunwootech.smartarea)</p>
 
 <p>선우테크(SUNWOOTECH, 이하 “개발자”)는 「스마트 면적측정」(이하 “앱”)을 이용하는 분의 개인정보를 소중히 다루며, 관련 법령을 지킵니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
 
@@ -32,7 +32,7 @@
 <h2>2. 앱이 사용하는 정보와 목적</h2>
 <table>
 <tr><th>정보</th><th>사용 목적</th><th>처리 위치</th></tr>
-<tr><td>정밀 위치(GPS)</td><td>현재 위치 표시, 도보·차량 이동 경로에 따른 면적 측정</td><td>기기 안에서 계산. 앱을 사용하는 동안에만 사용하며 백그라운드에서 수집하지 않습니다.</td></tr>
+<tr><td>정밀 위치(GPS)</td><td>현재 위치 표시, 도보·차량 이동 경로에 따른 면적 측정</td><td>기기 안에서 계산. 도보·차량 측정 중에는 화면이 꺼지거나 다른 앱으로 전환해도 경로가 끊기지 않도록 상단 알림을 표시한 채(포그라운드 서비스) 위치를 사용하며, 측정을 끝내면 즉시 중단합니다. 그 밖의 백그라운드 위치 수집은 하지 않습니다.</td></tr>
 <tr><td>지도 위 좌표(측정 지점)</td><td>지도·위성사진 표시, 주소·지번 검색, 지적도 경계 조회, 고도 표시</td><td>아래 3항의 지도·데이터 제공자에게 조회 요청으로 전송</td></tr>
 <tr><td>측정 기록·캡처 이미지</td><td>저장기록 보관, 갤러리 저장, 이용자가 선택한 공유</td><td>기기 내부 저장소·갤러리. 공유는 이용자가 직접 선택한 앱으로만 전달</td></tr>
 <tr><td>구매 정보</td><td>Pro 구독 여부 확인</td><td>Google Play 결제. 카드 등 결제수단 정보는 개발자에게 전달되지 않습니다.</td></tr>
@@ -48,15 +48,19 @@
 <li>브이월드 (국토교통부) — 지적도·지번 경계</li>
 <li>국토지리정보원 국토정보플랫폼 — 과거 항공사진</li>
 <li>Open-Meteo — 고도 조회</li>
+<li>Esri ArcGIS Location Platform (Esri) — 해외용 위성사진·촬영 시기별 과거 위성사진(World Imagery Wayback)</li>
+<li>Geoapify · Photon(OpenStreetMap) — 해외 주소 검색·현재 위치 주소</li>
 </ul>
+<p><b>지도 이용 조건</b> — 앱에 표시되는 지도·위성사진은 각 제공자의 이용 조건을 따릅니다. 특히 Esri 위성사진은 <a href="https://www.esri.com/en-us/legal/terms/full-master-agreement">Esri 이용약관(Master Agreement)</a>이 적용되며, 앱 안에서 보기 위한 용도로만 제공됩니다(사진을 따로 내려받아 재배포하거나 다른 서비스에 쓰는 것은 허용되지 않습니다). 지도 위 출처 표시(Powered by Esri 등)는 가리거나 지울 수 없습니다.</p>
 
 <h2>4. 광고 (Google AdMob)</h2>
-<p>무료 버전에는 Google AdMob 광고가 표시됩니다. AdMob은 광고 제공과 성과 측정을 위해 광고 ID, 기기 정보, IP 기반 대략적 위치, 광고 상호작용 정보를 수집할 수 있습니다. 유럽경제지역·영국·스위스 이용자에게는 처음 실행 시 맞춤 광고 동의를 묻고, 앱의 [설정/도움 → ⚙️ 설정 → 🔒 광고 개인정보 설정]에서 언제든 바꿀 수 있습니다. 기기의 [설정 → 개인정보 보호 → 광고]에서 광고 ID를 재설정하거나 삭제할 수 있습니다. Pro 구독 중에는 광고가 표시되지 않습니다.</p>
+<p>무료 버전에는 Google AdMob 광고가 표시됩니다. 원하면 보상형 광고 1편을 끝까지 보고 하루 1번, 60분 동안 광고 없이 Pro 기능을 체험할 수 있습니다(보상 지급 여부만 앱에 기록되고 시청 정보는 개발자에게 전송되지 않습니다). AdMob은 광고 제공과 성과 측정을 위해 광고 ID, 기기 정보, IP 기반 대략적 위치, 광고 상호작용 정보를 수집할 수 있습니다. 유럽경제지역·영국·스위스 이용자에게는 처음 실행 시 맞춤 광고 동의를 묻고, 앱의 [설정/도움 → ⚙️ 설정 → 🔒 광고 개인정보 설정]에서 언제든 바꿀 수 있습니다. 기기의 [설정 → 개인정보 보호 → 광고]에서 광고 ID를 재설정하거나 삭제할 수 있습니다. Pro 구독 중에는 광고가 표시되지 않습니다.</p>
 <p class="muted">Google의 정보 처리: https://policies.google.com/technologies/partner-sites</p>
 
 <h2>5. 앱 권한</h2>
 <ul>
-<li>위치(정밀·대략): 면적 측정과 현재 위치 표시 — 거부하면 GPS 측정만 제한되고 터치 측정은 가능합니다.</li>
+<li>위치(정밀·대략), 포그라운드 서비스(위치): 면적 측정과 도보·차량 경로 기록 — 거부하면 GPS 측정만 제한되고 터치 측정은 가능합니다.</li>
+<li>알림: 측정 중 "면적 측정 중" 표시</li>
 <li>인터넷: 지도·조회·광고·결제</li>
 <li>진동: 버튼 터치 반응</li>
 <li>광고 ID: 무료 버전 광고(AdMob)</li>
@@ -85,7 +89,7 @@
 
 <section id="en" lang="en">
 <h1>Smart Area Measure Privacy Policy</h1>
-<p class="muted">Effective date: Sep. 30. 2026 · App: Smart Area Measure (com.sunwootech.smartarea)</p>
+<p class="muted">Effective date: October 10, 2026 · App: Smart Area Measure (com.sunwootech.smartarea)</p>
 
 <p>SUNWOOTECH (“we”) respects your privacy. This policy explains what information the Smart Area Measure app (“the app”) uses and how.</p>
 
@@ -95,7 +99,7 @@
 <h2>2. Information the app uses</h2>
 <table>
 <tr><th>Information</th><th>Purpose</th><th>Where it is processed</th></tr>
-<tr><td>Precise location (GPS)</td><td>Show your position; measure area along walking or driving paths</td><td>Calculated on your device, only while the app is in use (no background collection)</td></tr>
+<tr><td>Precise location (GPS)</td><td>Show your position; measure area along walking or driving paths</td><td>Calculated on your device. During GPS walk/vehicle measuring, location keeps being used with a visible notification (foreground service) so the path continues when the screen is off or you switch apps; it stops as soon as you finish. No other background collection.</td></tr>
 <tr><td>Map coordinates</td><td>Display maps and imagery, search addresses/parcels, look up boundaries and elevation</td><td>Sent as requests to the map/data providers in section 3</td></tr>
 <tr><td>Records and screenshots</td><td>Saved history, gallery, sharing you choose</td><td>Device storage and gallery; shared only to apps you pick</td></tr>
 <tr><td>Purchase status</td><td>Check Pro subscription</td><td>Google Play Billing — we never receive your card details</td></tr>
@@ -110,14 +114,18 @@
 <li>VWorld (Korea Ministry of Land, Infrastructure and Transport)</li>
 <li>National Geographic Information Institute (Korea) — historical aerial imagery</li>
 <li>Open-Meteo — elevation</li>
+<li>Esri ArcGIS Location Platform (Esri) — satellite imagery and historical imagery by capture date (World Imagery Wayback)</li>
+<li>Geoapify · Photon (OpenStreetMap) — address search and current address outside Korea</li>
 </ul>
+<p><b>Map terms of use</b> — Maps and imagery shown in the app are subject to each provider's terms. In particular, Esri imagery is subject to the <a href="https://www.esri.com/en-us/legal/terms/full-master-agreement">Esri Master Agreement (Terms of Use)</a> and is provided for viewing inside the app only; you may not download, redistribute or reuse the imagery in other services. Map attributions (such as “Powered by Esri”) must not be hidden or removed.</p>
 
 <h2>4. Advertising (Google AdMob)</h2>
-<p>The free version shows Google AdMob ads. AdMob may collect your advertising ID, device information, approximate location based on IP, and ad interactions to serve and measure ads. Users in the EEA, UK and Switzerland are asked for consent on first launch and can change it anytime in the app under Settings/Help → ⚙️ Settings → 🔒 Ad privacy settings. You can reset or delete your advertising ID in your device settings. No ads are shown while you have Pro.</p>
+<p>The free version shows Google AdMob ads. Optionally, you can watch one rewarded ad to the end for a 60-minute Pro trial without ads (once a day) (only the reward status is stored in the app; viewing data is not sent to the developer). AdMob may collect your advertising ID, device information, approximate location based on IP, and ad interactions to serve and measure ads. Users in the EEA, UK and Switzerland are asked for consent on first launch and can change it anytime in the app under Settings/Help → ⚙️ Settings → 🔒 Ad privacy settings. You can reset or delete your advertising ID in your device settings. No ads are shown while you have Pro.</p>
 
 <h2>5. Permissions</h2>
 <ul>
-<li>Location: measuring and showing your position (touch measuring still works if denied)</li>
+<li>Location and foreground service (location): measuring and recording walking/driving paths (touch measuring still works if denied)</li>
+<li>Notifications: "Measuring area" while measuring</li>
 <li>Internet: maps, lookups, ads and purchases</li>
 <li>Vibration: touch feedback</li>
 <li>Advertising ID: ads in the free version (AdMob)</li>
