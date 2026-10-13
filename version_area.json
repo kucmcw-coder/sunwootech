@@ -1,38 +1,39 @@
 {
-  "latestVersion": "1.1.92",
+  "latestVersion": "1.1.93",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.91",
+  "minSupportedVersion": "1.1.92",
+  "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🎁 광고 1편 보고 1시간 Pro 체험 (하루 1번) — 점 편집·구역 삭제·구역 무제한·Esri 위성·과거 항공사진, 광고 없음",
     "🕘 Esri 위성(시기별)·✈️ 과거 항공사진에서도 면적 측정 — 점 찍기·편집·GPS 걷기",
     "❓ 면적측정 사용설명서 버튼을 화면 오른쪽 위 「?」로 옮김",
-    "🔒 Pro 기능 안내 창을 하나로 정리(체험·구독 기능 구분)"
+    "🔒 Pro 기능 안내 창을 하나로 정리",
+    "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "광고 1편으로 Pro 주요 기능을 1시간 써 볼 수 있게 했습니다. 지번 자동 그리기·차량 추적·측정 이력은 구독 전용입니다.",
+  "releaseDev": "Esri 위성(시기별)·과거 항공사진에서도 면적을 잴 수 있게 했습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🎁 Watch one ad for a 1-hour Pro trial (once a day): point edit, delete zone, unlimited zones, Esri Satellite, past aerial photos, no ads",
     "🕘 Measure on Esri Satellite (by date) and ✈️ past aerial photos too — tap points, edit, GPS walk",
     "❓ The user guide button is now the “?” at the top right of the map",
-    "🔒 One clear Pro notice that shows trial vs. subscription features"
+    "🔒 One clear Pro notice",
+    "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "Try the main Pro features for an hour with one ad. Auto-draw parcel, vehicle tracking and history stay subscription-only.",
+  "releaseDev_en": "You can now measure on Esri Satellite (by date) and past aerial photos.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🎁 Mira un anuncio y prueba Pro 1 hora (una vez al día): edición de puntos, borrar zona, zonas sin límite, Satélite Esri, fotos aéreas históricas, sin anuncios",
     "🕘 Mide también en el Satélite Esri (por fecha) y ✈️ fotos aéreas históricas: puntos, edición y caminata GPS",
     "❓ El botón de la guía ahora es el «?» arriba a la derecha del mapa",
-    "🔒 Un único aviso Pro que separa las funciones de la prueba y de la suscripción"
+    "🔒 Un único aviso Pro",
+    "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Prueba las principales funciones Pro durante una hora con un anuncio. Dibujar parcela, seguimiento en vehículo e historial siguen siendo de suscripción.",
+  "releaseDev_es": "Ahora puedes medir sobre el Satélite Esri (por fecha) y las fotos aéreas antiguas.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🎁 Assista a um anúncio e teste o Pro por 1 hora (uma vez por dia): edição de pontos, apagar área, áreas sem limite, Satélite Esri, fotos aéreas históricas, sem anúncios",
     "🕘 Meça também no Satélite Esri (por data) e ✈️ fotos aéreas históricas: pontos, edição e caminhada GPS",
     "❓ O botão do guia agora é o «?» no canto superior direito do mapa",
-    "🔒 Um único aviso Pro que separa as funções do teste e da assinatura"
+    "🔒 Um único aviso Pro",
+    "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Teste os principais recursos Pro por uma hora com um anúncio. Desenhar lote, rastreamento em veículo e histórico continuam exclusivos da assinatura.",
+  "releaseDev_pt": "Agora você pode medir no Satélite Esri (por data) e nas fotos aéreas antigas.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
