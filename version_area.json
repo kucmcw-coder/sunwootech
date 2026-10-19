@@ -1,39 +1,35 @@
 {
-  "latestVersion": "1.1.93",
+  "latestVersion": "1.1.94",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.92",
+  "minSupportedVersion": "1.1.93",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🕘 Esri 위성(시기별)·✈️ 과거 항공사진에서도 면적 측정 — 점 찍기·편집·GPS 걷기",
-    "❓ 면적측정 사용설명서 버튼을 화면 오른쪽 위 「?」로 옮김",
-    "🔒 Pro 기능 안내 창을 하나로 정리",
+    "🛰️ 해외에서는 처음 지도를 Esri 위성지도로",
+    "🌐 영어·스페인어·포르투갈어 안내 문구 번역 보완",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "Esri 위성(시기별)·과거 항공사진에서도 면적을 잴 수 있게 했습니다.",
+  "releaseDev": "해외 사용자를 위해 지도와 번역을 다듬었습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🕘 Measure on Esri Satellite (by date) and ✈️ past aerial photos too — tap points, edit, GPS walk",
-    "❓ The user guide button is now the “?” at the top right of the map",
-    "🔒 One clear Pro notice",
+    "🛰️ Outside Korea, the map now opens on Esri satellite imagery",
+    "🌐 More messages translated (history, sharing, backup, offline, aerial photos, point editing)",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "You can now measure on Esri Satellite (by date) and past aerial photos.",
+  "releaseDev_en": "We polished maps and translations for users outside Korea.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🕘 Mide también en el Satélite Esri (por fecha) y ✈️ fotos aéreas históricas: puntos, edición y caminata GPS",
-    "❓ El botón de la guía ahora es el «?» arriba a la derecha del mapa",
-    "🔒 Un único aviso Pro",
+    "🛰️ Fuera de Corea, el mapa se abre con las imágenes satelitales de Esri",
+    "🌐 Más mensajes traducidos (historial, compartir, copia de seguridad, sin conexión, fotos aéreas, edición de puntos)",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Ahora puedes medir sobre el Satélite Esri (por fecha) y las fotos aéreas antiguas.",
+  "releaseDev_es": "Mejoramos los mapas y las traducciones para usuarios fuera de Corea.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🕘 Meça também no Satélite Esri (por data) e ✈️ fotos aéreas históricas: pontos, edição e caminhada GPS",
-    "❓ O botão do guia agora é o «?» no canto superior direito do mapa",
-    "🔒 Um único aviso Pro",
+    "🛰️ Fora da Coreia, o mapa abre com as imagens de satélite da Esri",
+    "🌐 Mais mensagens traduzidas (histórico, compartilhamento, backup, offline, fotos aéreas, edição de pontos)",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Agora você pode medir no Satélite Esri (por data) e nas fotos aéreas antigas.",
+  "releaseDev_pt": "Melhoramos os mapas e as traduções para usuários fora da Coreia.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
