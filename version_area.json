@@ -1,35 +1,27 @@
 {
-  "latestVersion": "1.1.94",
+  "latestVersion": "1.1.95",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.93",
+  "minSupportedVersion": "1.1.94",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🛰️ 해외에서는 처음 지도를 Esri 위성지도로",
-    "🌐 영어·스페인어·포르투갈어 안내 문구 번역 보완",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "해외 사용자를 위해 지도와 번역을 다듬었습니다.",
+  "releaseDev": "더 안정적으로 쓰실 수 있도록 다듬었습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🛰️ Outside Korea, the map now opens on Esri satellite imagery",
-    "🌐 More messages translated (history, sharing, backup, offline, aerial photos, point editing)",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "We polished maps and translations for users outside Korea.",
+  "releaseDev_en": "Small fixes for a more stable experience.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🛰️ Fuera de Corea, el mapa se abre con las imágenes satelitales de Esri",
-    "🌐 Más mensajes traducidos (historial, compartir, copia de seguridad, sin conexión, fotos aéreas, edición de puntos)",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Mejoramos los mapas y las traducciones para usuarios fuera de Corea.",
+  "releaseDev_es": "Pequeñas correcciones para una experiencia más estable.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🛰️ Fora da Coreia, o mapa abre com as imagens de satélite da Esri",
-    "🌐 Mais mensagens traduzidas (histórico, compartilhamento, backup, offline, fotos aéreas, edição de pontos)",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Melhoramos os mapas e as traduções para usuários fora da Coreia.",
+  "releaseDev_pt": "Pequenas correções para uma experiência mais estável.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
