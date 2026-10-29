@@ -1,27 +1,35 @@
 {
-  "latestVersion": "1.1.95",
+  "latestVersion": "1.1.98",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.94",
+  "minSupportedVersion": "1.1.95",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
+    "✨ 지번 자동 그리기 개선: 구거·하천·도로·철도 지번도 자동으로 그립니다",
+    "🐛 오류 제보·메일 문의: 영어 등 외국어 화면에서는 영어로 작성",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "더 안정적으로 쓰실 수 있도록 다듬었습니다.",
+  "releaseDev": "하천·구거도 자동으로 그려 달라는 의견을 반영했습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
+    "✨ Parcel auto-draw: ditches, rivers, roads and railways can now be drawn automatically",
+    "🐛 Bug report and email inquiry now in English",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "Small fixes for a more stable experience.",
+  "releaseDev_en": "Based on your feedback, every parcel type can now be auto-drawn.",
   "releaseNotes_es": [
     "[✨ Novedades]",
+    "✨ Dibujo automático de parcelas: ahora también acequias, ríos, caminos y vías férreas",
+    "🐛 Informe de errores y consultas por correo ahora en inglés",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Pequeñas correcciones para una experiencia más estable.",
+  "releaseDev_es": "Según sus comentarios, ahora se pueden dibujar automáticamente todas las parcelas.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
+    "✨ Desenho automático de lotes: agora também valas, rios, estradas e ferrovias",
+    "🐛 Relato de erros e contato por e-mail agora em inglês",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Pequenas correções para uma experiência mais estável.",
+  "releaseDev_pt": "Com base no seu feedback, agora todos os lotes podem ser desenhados automaticamente.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
