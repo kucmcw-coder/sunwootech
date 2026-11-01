@@ -1,7 +1,7 @@
 {
   "latestVersion": "1.1.99",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.98",
+  "minSupportedVersion": "1.1.99",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
     "🥦 브로콜리 피해율 수정(전산과 0.01% 차이)",
