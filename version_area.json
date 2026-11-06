@@ -1,35 +1,39 @@
 {
-  "latestVersion": "1.1.100",
+  "latestVersion": "1.1.101",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.98",
+  "minSupportedVersion": "1.1.101",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🔍 결과창 보기 형식 추가: 간단히(면적·주소만 크게) / 자세히",
-    "👆 주소를 누르면 보기 형식이 바로 바뀝니다",
+    "🔍 간단히 보기 개선: 면적·평은 한 줄, 주소는 두 줄까지",
+    "🗺️ 지적도 진하기 조절: 카카오·네이버 지적도에서 위성사진이 잘 보이게",
+    "📜 설정/도움에서 지난 업데이트 내역 보기",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "현장에서 면적과 주소를 한눈에 보시도록 간단히 보기를 넣었습니다.",
+  "releaseDev": "간단히 보기에서 주소가 잘리지 않게 다듬었습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🔍 New result panel view: Simple (large area and address) / Detailed",
-    "👆 Tap the address to switch the view",
+    "🔍 Improved simple view: area on one line, address up to two lines",
+    "🗺️ Adjustable parcel line opacity on Kakao/Naver cadastral maps",
+    "📜 Past update history in Settings",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "A simple view so you can read the area and address at a glance in the field.",
+  "releaseDev_en": "The address no longer gets cut off in the simple view.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🔍 Nueva vista del panel de resultados: Simple (área y dirección grandes) / Detallada",
-    "👆 Toca la dirección para cambiar la vista",
+    "🔍 Vista simple mejorada: área en una línea, dirección hasta dos líneas",
+    "🗺️ Opacidad del catastro ajustable en los mapas Kakao/Naver",
+    "📜 Historial de actualizaciones en Ajustes",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Una vista simple para leer el área y la dirección de un vistazo en el campo.",
+  "releaseDev_es": "La dirección ya no se corta en la vista simple.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🔍 Nova visualização do painel de resultados: Simples (área e endereço grandes) / Detalhada",
-    "👆 Toque no endereço para mudar a visualização",
+    "🔍 Visualização simples melhorada: área em uma linha, endereço em até duas linhas",
+    "🗺️ Opacidade do cadastro ajustável nos mapas Kakao/Naver",
+    "📜 Histórico de atualizações em Configurações",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Uma visualização simples para ver a área e o endereço de relance no campo.",
+  "releaseDev_pt": "O endereço não é mais cortado na visualização simples.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
