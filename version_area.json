@@ -1,39 +1,35 @@
 {
-  "latestVersion": "1.1.101",
+  "latestVersion": "1.1.102",
   "forceUpdate": false,
   "minSupportedVersion": "1.1.101",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🔍 간단히 보기 개선: 면적·평은 한 줄, 주소는 두 줄까지",
-    "🗺️ 지적도 진하기 조절: 카카오·네이버 지적도에서 위성사진이 잘 보이게",
-    "📜 설정/도움에서 지난 업데이트 내역 보기",
+    "🔍 설정에 면적 보기 [간단히 | 자세히] 추가",
+    "🌐 다른 언어 화면의 설정 표시 개선",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "간단히 보기에서 주소가 잘리지 않게 다듬었습니다.",
+  "releaseDev": "설정 화면을 다듬었습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🔍 Improved simple view: area on one line, address up to two lines",
-    "🗺️ Adjustable parcel line opacity on Kakao/Naver cadastral maps",
-    "📜 Past update history in Settings",
+    "🔍 Area view [Simple | Detailed] added to Settings",
+    "🌐 Settings layout fixed for non-Korean languages",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "The address no longer gets cut off in the simple view.",
+  "releaseDev_en": "We polished the Settings screen.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🔍 Vista simple mejorada: área en una línea, dirección hasta dos líneas",
-    "🗺️ Opacidad del catastro ajustable en los mapas Kakao/Naver",
-    "📜 Historial de actualizaciones en Ajustes",
+    "🔍 Vista del área [Simple | Detallada] en Ajustes",
+    "🌐 Ajustes mejor presentados en otros idiomas",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "La dirección ya no se corta en la vista simple.",
+  "releaseDev_es": "Mejoramos la pantalla de Ajustes.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🔍 Visualização simples melhorada: área em uma linha, endereço em até duas linhas",
-    "🗺️ Opacidade do cadastro ajustável nos mapas Kakao/Naver",
-    "📜 Histórico de atualizações em Configurações",
+    "🔍 Visualização da área [Simples | Detalhada] em Configurações",
+    "🌐 Configurações melhor exibidas em outros idiomas",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "O endereço não é mais cortado na visualização simples.",
+  "releaseDev_pt": "Melhoramos a tela de Configurações.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
