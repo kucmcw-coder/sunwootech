@@ -1,15 +1,14 @@
 {
-  "latestVersion": "1.1.102",
+  "latestVersion": "1.1.103",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.102",
+  "minSupportedVersion": "1.1.103",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "📸 스탬프카메라 바로 저장: 셔터를 누르면 확인(✓) 없이 저장",
-    "👀 카메라 화면에 스탬프 미리보기 · 방금 찍은 사진 썸네일",
-    "🔘 볼륨키 촬영 · 터치 초점 · 확대/축소 · 플래시 선택",
-    "🔍 설정에 면적 보기 [간단히 | 자세히] 추가",
+    "🍋 유자 계약변경: 수정평년·가입금액·피해율 전산과 일치",
+    "⚙️ 설정 화면 글자 잘림 수정",
+    "📖 도움말·사용설명서 정리",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "현장에서 한 장 찍을 때마다 확인을 누르던 번거로움을 없앴습니다.",
+  "releaseDev": "유자 계약변경을 전산과 원 단위까지 맞췄습니다.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartadjust"
 }
