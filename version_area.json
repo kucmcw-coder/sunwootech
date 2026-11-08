@@ -1,33 +1,29 @@
 {
-  "latestVersion": "1.1.102",
+  "latestVersion": "1.1.103",
   "forceUpdate": false,
   "minSupportedVersion": "1.1.101",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🔍 설정에 면적 보기 [간단히 | 자세히] 추가",
-    "🌐 다른 언어 화면의 설정 표시 개선",
+    "⚙️ 설정 화면 글자 잘림 수정",
     "🖼️ 기타 안정성 개선"
   ],
   "releaseDev": "설정 화면을 다듬었습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "🔍 Area view [Simple | Detailed] added to Settings",
-    "🌐 Settings layout fixed for non-Korean languages",
+    "⚙️ Settings labels no longer cut off",
     "🖼️ Other stability improvements"
   ],
   "releaseDev_en": "We polished the Settings screen.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "🔍 Vista del área [Simple | Detallada] en Ajustes",
-    "🌐 Ajustes mejor presentados en otros idiomas",
+    "⚙️ Los textos de Ajustes ya no se cortan",
     "🖼️ Otras mejoras de estabilidad"
   ],
   "releaseDev_es": "Mejoramos la pantalla de Ajustes.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "🔍 Visualização da área [Simples | Detalhada] em Configurações",
-    "🌐 Configurações melhor exibidas em outros idiomas",
+    "⚙️ Textos de Configurações não são mais cortados",
     "🖼️ Outras melhorias de estabilidade"
   ],
   "releaseDev_pt": "Melhoramos a tela de Configurações.",
