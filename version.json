@@ -1,14 +1,13 @@
 {
-  "latestVersion": "1.1.103",
+  "latestVersion": "1.1.104",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.103",
+  "minSupportedVersion": "1.1.104",
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "🍋 유자 계약변경: 수정평년·가입금액·피해율 전산과 일치",
-    "⚙️ 설정 화면 글자 잘림 수정",
-    "📖 도움말·사용설명서 정리",
+    "🌾 메밀 피해율 수정: 전산과 0.02% 다르던 점 바로잡음",
+    "🍊 감귤 과실손해: 등급 내·외 피해과실수 표시 수정, 조사서 순서로 정리",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "유자 계약변경을 전산과 원 단위까지 맞췄습니다.",
+  "releaseDev": "메밀·감귤을 전산 화면과 다시 맞췄습니다.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartadjust"
 }
