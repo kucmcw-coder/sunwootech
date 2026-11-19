@@ -1,31 +1,51 @@
 {
-  "latestVersion": "1.1.103",
+  "latestVersion": "1.1.105",
   "forceUpdate": false,
-  "minSupportedVersion": "1.1.101",
+  "minSupportedVersion": "1.1.103",
   "rewardedTrial": false,
   "releaseNotes": [
     "[✨ 이번 업데이트]",
-    "⚙️ 설정 화면 글자 잘림 수정",
+    "🗺️ 위 두 줄을 한 줄로, 「지도 크게」 버튼",
+    "🧭 버튼 배치 정리(초기화·자동 그리기·실행 취소 앞으로)",
+    "🌾 한국: 팜맵(농지가 아니면 지번)·필지 요약 카드",
+    "🇧🇷 브라질 CAR 필지 지도·자동 그리기",
+    "📱 폴드 등 넓은·좁은 화면 배치 개선",
+    "🔍 검색 목록 넓게, ⋯ 메뉴는 지도를 누르면 닫힘",
     "🖼️ 기타 안정성 개선"
   ],
-  "releaseDev": "설정 화면을 다듬었습니다.",
+  "releaseDev": "지도를 더 넓게, 버튼은 자주 쓰는 것부터 보이도록 정리했습니다.",
   "releaseNotes_en": [
     "[✨ What's new]",
-    "⚙️ Settings labels no longer cut off",
+    "🗺️ Top bars in one row and a new \"Big map\" button",
+    "🧭 Tidier buttons (Reset, Auto parcel, Undo up front)",
+    "🌾 Korea: FarmMap boundaries (cadastral off farmland) and a compact parcel card",
+    "🇧🇷 Brazil: CAR parcel map and auto-draw",
+    "📱 Better layout on foldables and narrow screens",
+    "🔍 Wider search results; ⋯ menu closes when you tap the map",
     "🖼️ Other stability improvements"
   ],
-  "releaseDev_en": "We polished the Settings screen.",
+  "releaseDev_en": "We cleared the screen so you see more of the map.",
   "releaseNotes_es": [
     "[✨ Novedades]",
-    "⚙️ Los textos de Ajustes ya no se cortan",
+    "🗺️ Barras superiores en una fila y botón «Mapa grande»",
+    "🧭 Botones reorganizados (Restablecer, Parcela auto, Deshacer a la vista)",
+    "🌾 Corea: límites FarmMap (catastro fuera de cultivos) y ficha compacta",
+    "🇧🇷 Brasil: mapa de parcelas CAR y dibujo automático",
+    "📱 Mejor diseño en plegables y pantallas estrechas",
+    "🔍 Resultados de búsqueda más anchos; el menú ⋯ se cierra al tocar el mapa",
     "🖼️ Otras mejoras de estabilidad"
   ],
-  "releaseDev_es": "Mejoramos la pantalla de Ajustes.",
+  "releaseDev_es": "Despejamos la pantalla para que veas más mapa.",
   "releaseNotes_pt": [
     "[✨ Novidades]",
-    "⚙️ Textos de Configurações não são mais cortados",
+    "🗺️ Barras superiores em uma linha e botão «Mapa grande»",
+    "🧭 Botões reorganizados (Reiniciar, Lote auto, Desfazer à vista)",
+    "🌾 Coreia: limites FarmMap (cadastro fora de lavouras) e ficha compacta",
+    "🇧🇷 Brasil: mapa de imóveis do CAR e desenho automático",
+    "📱 Layout melhor em dobráveis e telas estreitas",
+    "🔍 Resultados de busca mais largos; o menu ⋯ fecha ao tocar no mapa",
     "🖼️ Outras melhorias de estabilidade"
   ],
-  "releaseDev_pt": "Melhoramos a tela de Configurações.",
+  "releaseDev_pt": "Liberamos a tela para você ver mais do mapa.",
   "updateUrl": "https://play.google.com/store/apps/details?id=com.sunwootech.smartarea"
 }
