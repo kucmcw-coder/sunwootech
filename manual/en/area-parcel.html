@@ -12,8 +12,8 @@
 <div class="wrap">
 <header class="top"><a href="index.html">← Contents</a> · Measure<div class="langbar"><a href="../area-parcel.html">한국어</a><b>English</b><a href="../es/area-parcel.html">Español</a><a href="../pt/area-parcel.html">Português</a></div></header>
 <h1>Auto-draw parcel</h1>
-<p class="lead">Draws a parcel's cadastral boundary with one tap instead of tapping its corners. <span class="pro">Pro</span> <span class="soon">Korea only</span></p>
-<div class="warn">This feature uses South Korea's national cadastral map. Outside Korea there is no parcel data, so measure by tapping points or walking.</div>
+<p class="lead">Draws a parcel's cadastral boundary with one tap instead of tapping its corners. <span class="pro">Pro</span> <span class="soon">Korea · Brazil</span></p>
+<div class="warn">In Korea it uses the national cadastral map (or FarmMap field boundaries); in Brazil it uses CAR rural parcels. In other countries there is no parcel data, so measure by tapping points or walking.</div>
 <h2>One parcel — long press</h2>
 <ol class="steps">
 <li><b>Press and hold inside a parcel for 1–2 seconds.</b> Its boundary is drawn as a red zone.</li>
@@ -22,11 +22,15 @@
 <p>Even if other zones are already drawn, a long press adds the parcel as a new zone.</p>
 <h2>Several parcels — auto-draw button</h2>
 <ol class="steps">
-<li>Tap “🛠️” at the bottom right → “✨ Auto-draw parcel”.</li>
+<li>Tap “✨ Auto parcel” on the left. In Korea a bar <b>[📐 Cadastral | 🌾 FarmMap | ℹ️]</b> appears at the top: cadastral draws the registered parcel, FarmMap draws the actually farmed field read from aerial photos.</li>
 <li>While the button is on, tap parcels one after another. Each tap adds one parcel and the areas are added together.</li>
-<li>When finished, tap “✨ Auto-draw parcel” again to turn it off.</li>
+<li>When finished, tap “✨ Auto parcel” again to turn it off.</li>
 </ol>
 <figure><img src="../img/area-parcel.jpg" alt="Several parcels drawn one after another" onerror="this.parentNode.classList.add('noimg')"><div class="ph">Screenshot</div><figcaption>Several parcels drawn one after another (Korean version)</figcaption></figure>
+<h2>Parcel info card (ℹ️)</h2>
+<p>After drawing, a one-line summary appears at the top — tap it (or “Details ▾”) to expand, “▴” to fold. Tap “ℹ️” to open the full card (area, location, parcel code, source photo year, etc.). Use ‹ › to switch zones. “🕘 Past imagery of this parcel” switches the map to older photos of the same place (Korea: aerial photos by year; Brazil: Esri imagery by date).</p>
+<h2>Brazil — CAR parcels <span class="soon">Brazil only</span></h2>
+<p>In Brazil the map list shows “🇧🇷 CAR parcels (Brazil)”, which overlays CAR boundaries on satellite imagery. Turn on “✨ Auto parcel” and tap a parcel to draw it; the ℹ️ card shows declared area, municipality/state, status, type, fiscal modules, registration date and code. CAR boundaries are declared by owners and may differ from reality.</p>
 <h2>Fitting the parcel to the actual field</h2>
 <p>If only part of the parcel is farmed, or the boundary does not match reality, adjust it with “✂️ Point edit”: tap the boundary line to add a point and drag points to move them. See <a href="area-edit.html">Point edit</a>.</p>
 <p>If you also draw the same parcel by walking, the overlapping part is counted only once.</p>
@@ -36,7 +40,7 @@
 <li>Without internet the parcel data cannot be loaded.</li>
 </ul>
 <div class="nav2"><a href="area-history.html">← Measurement history and capture</a><a href="records.html">Viewing and sharing records →</a></div>
-<footer>App version 1.1.99 · Sunwoo Tech</footer>
+<footer>App version 1.1.105 · Sunwoo Tech</footer>
 </div>
 </body>
 </html>

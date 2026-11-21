@@ -43,7 +43,7 @@
 <li><b>Walk along the edge.</b> Hold the phone with its top pointing in the direction you walk. In a pocket the path gets shaky.</li>
 <li><b>Stop for 2–3 seconds at each corner.</b> Corners come out sharper.</li>
 <li><b>Back at the start, tap “🚶 Walk track” again to finish.</b></li>
-<li><b>If the line zigzags, tap “📐 Path fix”.</b> It removes jumpy points and straightens the line. Undo it with “↺ Undo” if you do not like the result.</li>
+<li><b>If the line zigzags, tap “📐 Path fix”.</b> It removes jumpy points and straightens the line. The button appears on the result box only when there is a walk/vehicle GPS track, and is also inside “⚙️ Options”. Undo it with “↺ Undo” if you do not like the result.</li>
 </ol>
 <div class="tip">While measuring, a “Measuring area” notification stays at the top of the phone. Recording continues even if the screen turns off or you switch apps.</div>
 <div class="warn">Under dense trees or near power lines GPS can jump by more than 1–3 m. Clean up those parts afterwards with point edit.</div>
@@ -63,20 +63,24 @@
 <div class="card"><b>View [Simple | Detailed]</b><br>Choose it under View in “⚙️ Options”. <b>Simple</b> shows the area on one line and the address on up to two lines in large type; <b>Detailed</b> also shows perimeter, point count, GPS and error. <b>Tap the address</b> in the result panel to switch instantly.</div>
 
 <h2 id="left">4. Left buttons</h2>
+<p>At the very top are the app name (Lite/Pro) and “?”, with the address search and map selector below them. On wide screens such as foldables they share one row.</p>
 <div class="tbl"><table>
 <tr><th>Button</th><th>What it does</th></tr>
 <tr><td>🧭 Compass</td><td>Shows which way the phone is pointing. The map always has north up.</td></tr>
-<tr><td>🎛️ Display</td><td>Shows or hides button labels, area labels on the map, your location arrow and the compass.</td></tr>
-<tr><td>🧹 Reset</td><td>Clears all zones and lines from the map.</td></tr>
-<tr><td>📸 Capture</td><td>Saves the map (without buttons) as a picture.</td></tr>
+<tr><td>⛶ Big map</td><td>Hides the app name, search bar and bottom tabs to show the map as large as possible. The result box and buttons move down to the bottom edge without overlapping. Tap again or press Back to restore.</td></tr>
+<tr><td>⋯ More</td><td>Tap to open.<br>· 📸 Capture: saves the map (without buttons) as a picture.<br>· 📐 Area / 📏 Length: switches between area and length measurement.<br>· Show or hide button labels, area labels, your location arrow and the compass; cadastral opacity<br>Tap anywhere on the map or “✕ Close” at the bottom to close it (no point is placed).</td></tr>
 <tr><td>🚶 Walk track</td><td>Starts or ends measuring by walking.</td></tr>
-<tr><td>📐 Area / 📏 Length</td><td>Switches between area and length measurement. Length mode shows each segment and the total length.</td></tr>
+<tr><td>🧹 Reset</td><td>Clears all zones and lines from the map. Kept on the front rail because it is used often.</td></tr>
+<tr><td>✨ Auto parcel</td><td>Tap the map to draw that parcel boundary as a zone. In Korea choose 📐 cadastral / 🌾 FarmMap at the top; in Brazil it uses CAR parcels. Tap again to finish. <span class="pro">Pro</span></td></tr>
+<tr><td>🎯 Fine adjust</td><td>Nudges the last point a little at a time. Shown only when there are points.</td></tr>
 <tr><td>My location</td><td>Moves the map to where you are.</td></tr>
 </table></div>
+<p>During walk or vehicle tracking the bottom tabs hide automatically and come back when you finish.</p>
 <p>Tap <b>“?”</b> at the top right of the screen to open this guide (the point-editing page while you are editing points).</p>
 
 <h2 id="right">5. Right tool menu</h2>
 <p>Tap “🛠️” at the bottom right to open it.</p>
+<p>The “↺” just above “🛠️” is <b>Undo</b> — it goes back one step without opening the menu. Auto drawing is only on the left “✨” button.</p>
 <div class="tbl"><table>
 <tr><th>Button</th><th>What it does</th></tr>
 <tr><td>✏️ Continue</td><td>Keeps adding points to the current zone. This is the default.</td></tr>
@@ -84,15 +88,14 @@
 <tr><td>➖ Exclude area</td><td>Draws a part to subtract inside a zone (pond, building, grave). That area is removed from the total.</td></tr>
 <tr><td>✂️ Point edit <span class="pro">Pro</span></td><td>Move or delete points, or tap a boundary line to add one.</td></tr>
 <tr><td>🗑️ Delete zone <span class="pro">Pro</span></td><td>Deletes just one of several zones.</td></tr>
-<tr><td>✨ Auto-draw parcel <span class="pro">Pro</span> <span class="soon">Korea only</span></td><td>Tap parcels to draw their cadastral boundaries.</td></tr>
 <tr><td>🚗 Vehicle track <span class="pro">Pro</span></td><td>Records the path at vehicle speed.</td></tr>
-<tr><td>↺ Undo / ↻ Redo</td><td>Goes back or forward one step.</td></tr>
+<tr><td>↻ Redo</td><td>Re-applies a step undone with “↺”.</td></tr>
 <tr><td>📌 Measurement history <span class="pro">Pro</span></td><td>Saves the drawn coordinates with a name so you can load them again later.</td></tr>
 </table></div>
 
 <h2 id="save">6. Keeping the result</h2>
 <ul>
-<li><b>As a picture</b> — “📸 Capture” saves the map and area as an image in your gallery.</li>
+<li><b>As a picture</b> — “⋯ More → 📸 Capture” saves the map and area as an image in your gallery.</li>
 <li><b>As editable data</b> — “📌 Measurement history” keeps the point coordinates. Load them later to continue or correct the measurement. Up to 200 entries. <span class="pro">Pro</span></li>
 </ul>
 
@@ -108,7 +111,7 @@
 <p>The app's area can differ from the land register by about 0.5–1%. Land registers use a flat map projection, while map apps calculate on the round Earth, and satellite images can be shifted by a few metres. This happens in every map app.</p>
 <div class="warn">For legal documents, sales or insurance, use the official surveyed area. The app's value is a reference for checking the size on site.</div>
 <div class="nav2"><a href="index.html">← Contents</a><a href="area-edit.html">Point edit →</a></div>
-<footer>App version 1.1.101 · Sunwoo Tech</footer>
+<footer>App version 1.1.107 · Sunwoo Tech</footer>
 </div>
 </body>
 </html>

@@ -12,8 +12,8 @@
 <div class="wrap">
 <header class="top"><a href="index.html">← Índice</a> · Medir<div class="langbar"><a href="../area-parcel.html">한국어</a><a href="../en/area-parcel.html">English</a><b>Español</b><a href="../pt/area-parcel.html">Português</a></div></header>
 <h1>Dibujar parcela automáticamente</h1>
-<p class="lead">Dibuja el límite catastral de una parcela con un toque, sin tocar sus esquinas. <span class="pro">Pro</span> <span class="soon">solo en Corea</span></p>
-<div class="warn">Esta función usa el mapa catastral nacional de Corea del Sur. Fuera de Corea no hay datos de parcelas, así que mide tocando puntos o caminando.</div>
+<p class="lead">Dibuja el límite catastral de una parcela con un toque, sin tocar sus esquinas. <span class="pro">Pro</span> <span class="soon">Corea · Brasil</span></p>
+<div class="warn">En Corea usa el mapa catastral nacional (o los límites de cultivo de FarmMap); en Brasil usa las parcelas rurales del CAR. En otros países no hay datos de parcelas, así que mide tocando puntos o caminando.</div>
 <h2>Una parcela — pulsación larga</h2>
 <ol class="steps">
 <li><b>Mantén pulsado dentro de una parcela 1–2 segundos.</b> Su límite se dibuja como una zona roja.</li>
@@ -22,11 +22,15 @@
 <p>Aunque ya haya otras zonas dibujadas, la pulsación larga añade la parcela como zona nueva.</p>
 <h2>Varias parcelas — botón de dibujo automático</h2>
 <ol class="steps">
-<li>Toca «🛠️» abajo a la derecha → «✨ Dibujar parcela».</li>
+<li>Toca «✨ Parcela auto» a la izquierda. En Brasil se dibujan las parcelas del CAR.</li>
 <li>Con el botón activado, toca las parcelas una tras otra. Cada toque añade una parcela y las áreas se suman.</li>
-<li>Al terminar, toca «✨ Dibujar parcela» de nuevo para desactivarlo.</li>
+<li>Al terminar, toca «✨ Parcela auto» de nuevo para desactivarlo.</li>
 </ol>
 <figure><img src="../img/area-parcel.jpg" alt="Varias parcelas dibujadas una tras otra" onerror="this.parentNode.classList.add('noimg')"><div class="ph">Captura de pantalla</div><figcaption>Varias parcelas dibujadas una tras otra (versión coreana)</figcaption></figure>
+<h2>Ficha de la parcela (ℹ️)</h2>
+<p>Después de dibujar aparece arriba un resumen de una línea: tócalo (o «Detalles ▾») para ver la ficha completa y «▴» para plegarla. «ℹ️» abre la ficha completa. Con ‹ › cambias de zona. «🕘 Imágenes satelitales anteriores» cambia el mapa a fotos antiguas del mismo lugar (Esri por fecha).</p>
+<h2>Brasil — parcelas CAR <span class="soon">solo en Brasil</span></h2>
+<p>En Brasil la lista de mapas muestra «🇧🇷 Parcelas CAR (Brasil)», que superpone los límites del CAR sobre la imagen satelital. Activa «✨ Parcela auto» y toca una parcela para dibujarla; la ficha ℹ️ muestra área declarada, municipio/estado, situación, tipo, módulos fiscales, fecha de registro y código. Los límites del CAR los declara el propietario y pueden diferir de la realidad.</p>
 <h2>Ajustar la parcela al campo real</h2>
 <p>Si solo se cultiva una parte de la parcela o el límite no coincide con la realidad, ajústalo con «✂️ Edición de puntos»: toca la línea del borde para añadir un punto y arrastra los puntos para moverlos. Consulta <a href="area-edit.html">Edición de puntos</a>.</p>
 <p>Si además dibujas la misma parcela caminando, la parte superpuesta se cuenta una sola vez.</p>
@@ -36,7 +40,7 @@
 <li>Sin internet no se pueden cargar los datos de parcelas.</li>
 </ul>
 <div class="nav2"><a href="area-history.html">← Historial de mediciones y captura</a><a href="records.html">Ver y compartir registros →</a></div>
-<footer>Versión de la app 1.1.99 · Sunwoo Tech</footer>
+<footer>Versión de la app 1.1.105 · Sunwoo Tech</footer>
 </div>
 </body>
 </html>
